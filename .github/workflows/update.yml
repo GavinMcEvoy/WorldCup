@@ -1,0 +1,44 @@
+name: Update standings
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"   # every 2 hours (UTC)
+  workflow_dispatch: {}       # manual "Run workflow" button
+
+# Allow the job to commit standings.json back to the repo.
+permissions:
+  contents: write
+
+# Don't let overlapping scheduled runs race each other on the push.
+concurrency:
+  group: update-standings
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Recompute standings
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: python3 update_standings.py
+
+      - name: Commit standings.json if it changed
+        run: |
+          git config user.name  "wc-bot"
+          git config user.email "actions@github.com"
+          if git diff --quiet -- standings.json; then
+            echo "No change in standings.json — nothing to commit."
+          else
+            git add standings.json
+            git commit -m "Update standings ($(date -u +'%Y-%m-%dT%H:%MZ'))"
+            git push
+          fi

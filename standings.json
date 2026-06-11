@@ -1,0 +1,28 @@
+{
+  "lastUpdated": "2026-06-11T19:15:07.857968Z",
+  "competition": "FIFA World Cup 2026",
+  "totalMatches": 0,
+  "finishedMatches": 0,
+  "tournamentStarted": false,
+  "players": [],
+  "upcomingMatches": [],
+  "scoringLegend": {
+    "stagePoints": {
+      "Round of 32": 1,
+      "Round of 16": 2,
+      "Quarterfinal": 3,
+      "Semifinal": 5,
+      "Final": 7,
+      "Champion": 10
+    },
+    "potMultipliers": {
+      "1": 1,
+      "2": 1.5,
+      "3": 2,
+      "4": 3
+    }
+  },
+  "warnings": [
+    "48 team(s) missing IDs in pots.json"
+  ]
+}

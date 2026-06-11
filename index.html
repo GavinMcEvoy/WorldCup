@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0a3d2e">
+<title>World Cup 2026 Pool</title>
+<style>
+  :root {
+    --bg: #07261c;
+    --bg2: #0a3d2e;
+    --card: #0f4a39;
+    --line: rgba(255,255,255,0.10);
+    --txt: #f3f7f5;
+    --muted: #9fc4b5;
+    --gold: #f5c542;
+    --green: #2bd576;
+    --accent: #1de9b6;
+    --shadow: 0 4px 18px rgba(0,0,0,0.35);
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background:
+      radial-gradient(1200px 600px at 50% -10%, rgba(45,233,182,0.10), transparent 60%),
+      linear-gradient(180deg, var(--bg2), var(--bg) 55%);
+    background-attachment: fixed;
+    color: var(--txt);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    min-height: 100vh;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 18px 14px 48px; }
+
+  header { text-align: center; margin-bottom: 14px; }
+  .kicker { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+  h1 { font-size: 26px; margin: 4px 0 2px; line-height: 1.15; }
+  h1 .ball { filter: saturate(0); }
+  .updated { color: var(--muted); font-size: 13px; margin-top: 4px; }
+  .banner {
+    margin: 12px 0; padding: 10px 12px; border-radius: 12px;
+    background: rgba(245,197,66,0.12); border: 1px solid rgba(245,197,66,0.35);
+    color: #ffe9a8; font-size: 13.5px; text-align: center;
+  }
+  .banner.err { background: rgba(255,90,90,0.14); border-color: rgba(255,90,90,0.4); color: #ffc2c2; }
+
+  .board { display: flex; flex-direction: column; gap: 10px; margin-top: 12px; }
+
+  .row {
+    background: linear-gradient(180deg, var(--card), #0c4031);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: border-color .15s ease;
+  }
+  .row.leader { border-color: rgba(245,197,66,0.55); box-shadow: 0 4px 22px rgba(245,197,66,0.18); }
+
+  .rowhead {
+    display: grid; grid-template-columns: 42px 1fr auto 26px;
+    align-items: center; gap: 10px;
+    padding: 14px 14px; cursor: pointer; user-select: none;
+  }
+  .rank {
+    font-size: 20px; font-weight: 800; text-align: center;
+    width: 40px; height: 40px; line-height: 40px; border-radius: 11px;
+    background: rgba(255,255,255,0.06); color: var(--muted);
+  }
+  .row.leader .rank { background: var(--gold); color: #3a2a00; }
+  .rank.medal2 { color: #d8e0e6; }
+  .rank.medal3 { color: #e6b98a; }
+
+  .pname { font-size: 18px; font-weight: 700; }
+  .psub { font-size: 12.5px; color: var(--muted); margin-top: 1px; }
+  .crown { font-size: 14px; }
+
+  .pts { text-align: right; }
+  .pts .num { font-size: 22px; font-weight: 800; color: var(--green); }
+  .pts .lbl { font-size: 10.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
+
+  .chev { color: var(--muted); transition: transform .2s ease; text-align: center; font-size: 14px; }
+  .row.open .chev { transform: rotate(180deg); }
+
+  .detail { display: none; padding: 2px 12px 12px; }
+  .row.open .detail { display: block; }
+  .teamline {
+    display: grid; grid-template-columns: 1fr auto auto;
+    align-items: center; gap: 8px;
+    padding: 9px 8px; border-top: 1px solid var(--line); font-size: 14px;
+  }
+  .teamline:first-child { border-top: 1px solid var(--line); }
+  .tname { font-weight: 600; }
+  .tmeta { font-size: 11.5px; color: var(--muted); margin-top: 1px; }
+  .pot { display: inline-block; font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 6px; margin-left: 6px; vertical-align: middle; }
+  .pot1 { background: #2b6cff33; color: #aac6ff; }
+  .pot2 { background: #2bd57633; color: #a7ecc6; }
+  .pot3 { background: #f5c54233; color: #f7dd97; }
+  .pot4 { background: #ff7ad933; color: #ffb9ec; }
+  .stagebadge { font-size: 11.5px; color: var(--muted); white-space: nowrap; }
+  .tpts { font-weight: 800; color: var(--green); min-width: 42px; text-align: right; }
+  .tpts.zero { color: var(--muted); font-weight: 600; }
+
+  .legend, .upcoming {
+    margin-top: 22px; background: rgba(255,255,255,0.04);
+    border: 1px solid var(--line); border-radius: 14px; padding: 14px;
+  }
+  .legend h2, .upcoming h2 { font-size: 14px; margin: 0 0 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); }
+  .legend table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .legend td { padding: 3px 0; }
+  .legend td:last-child { text-align: right; color: var(--muted); }
+  .legend .mults { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .legend .mults span { font-size: 11.5px; padding: 3px 8px; border-radius: 8px; background: rgba(255,255,255,0.06); }
+  .legend .formula { margin-top: 10px; font-size: 12px; color: var(--muted); text-align: center; }
+
+  .fx { font-size: 13px; display: flex; justify-content: space-between; gap: 8px; padding: 6px 0; border-top: 1px solid var(--line); }
+  .fx:first-of-type { border-top: none; }
+  .fx .when { color: var(--muted); font-size: 12px; white-space: nowrap; }
+  .fx .stage { color: var(--accent); font-size: 11px; }
+
+  footer { text-align: center; color: var(--muted); font-size: 11.5px; margin-top: 26px; }
+  .refresh { display:inline-flex; align-items:center; gap:6px; }
+  .dot { width:7px; height:7px; border-radius:50%; background: var(--green); display:inline-block; animation: pulse 2.4s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.35} }
+
+  .skeleton { height: 74px; border-radius: 16px; background: linear-gradient(90deg, #0e4534, #145441, #0e4534); background-size: 200% 100%; animation: sk 1.4s infinite; }
+  @keyframes sk { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Fantasy Pool</div>
+    <h1><span class="ball">⚽</span> World Cup 2026</h1>
+    <div class="updated" id="updated">Loading…</div>
+  </header>
+
+  <div id="banner"></div>
+  <div class="board" id="board">
+    <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+  </div>
+
+  <section class="legend" id="legend" hidden>
+    <h2>How scoring works</h2>
+    <table>
+      <tr><td>Round of 32</td><td>1 pt</td></tr>
+      <tr><td>Round of 16</td><td>2 pts</td></tr>
+      <tr><td>Quarterfinal</td><td>3 pts</td></tr>
+      <tr><td>Semifinal</td><td>5 pts</td></tr>
+      <tr><td>Final</td><td>7 pts</td></tr>
+      <tr><td>Champion</td><td>10 pts</td></tr>
+    </table>
+    <div class="mults">
+      <span>Pot 1 ×1</span><span>Pot 2 ×1.5</span><span>Pot 3 ×2</span><span>Pot 4 ×3</span>
+    </div>
+    <div class="formula">Team points = furthest&nbsp;stage&nbsp;points × pot&nbsp;multiplier · A player's score is the sum of their teams.</div>
+  </section>
+
+  <section class="upcoming" id="upcoming" hidden>
+    <h2>Next up</h2>
+    <div id="fixtures"></div>
+  </section>
+
+  <footer>
+    <div class="refresh"><span class="dot"></span> Auto-updates every 2 min · data refreshes server-side every 2 hrs</div>
+    <div id="meta" style="margin-top:6px"></div>
+  </footer>
+</div>
+
+<script>
+const REFRESH_MS = 120000;            // re-fetch standings.json every 2 minutes
+const POT_NAMES = {1:"pot1",2:"pot2",3:"pot3",4:"pot4"};
+let openPlayers = new Set();          // remember which rows are expanded across refreshes
+
+function fmtRelative(iso) {
+  if (!iso) return "unknown";
+  const then = new Date(iso).getTime();
+  if (isNaN(then)) return "unknown";
+  const s = Math.max(0, Math.round((Date.now() - then) / 1000));
+  if (s < 60) return "just now";
+  const m = Math.round(s / 60);
+  if (m < 60) return m + " min ago";
+  const h = Math.round(m / 60);
+  if (h < 24) return h + (h === 1 ? " hour ago" : " hours ago");
+  const d = Math.round(h / 24);
+  return d + (d === 1 ? " day ago" : " days ago");
+}
+
+function fmtPts(n) {
+  return (Math.round(n * 100) / 100).toString();
+}
+
+function fmtKickoff(iso) {
+  if (!iso) return "TBD";
+  const d = new Date(iso);
+  if (isNaN(d)) return "TBD";
+  return d.toLocaleString(undefined, { weekday:"short", month:"short", day:"numeric", hour:"numeric", minute:"2-digit" });
+}
+
+const STAGE_PRETTY = {
+  GROUP_STAGE:"Group", LAST_32:"Round of 32", LAST_16:"Round of 16",
+  QUARTER_FINALS:"Quarterfinal", SEMI_FINALS:"Semifinal", THIRD_PLACE:"3rd place", FINAL:"Final"
+};
+
+function rankBadge(rank) {
+  if (rank === 1) return "🥇";
+  if (rank === 2) return "🥈";
+  if (rank === 3) return "🥉";
+  return rank;
+}
+
+function render(data) {
+  // Header
+  document.getElementById("updated").textContent =
+    "Last updated " + fmtRelative(data.lastUpdated);
+  document.getElementById("meta").textContent =
+    (data.finishedMatches || 0) + " of " + (data.totalMatches || 0) + " matches played";
+
+  // Banners
+  const banner = document.getElementById("banner");
+  banner.innerHTML = "";
+  if (!data.tournamentStarted) {
+    banner.innerHTML = '<div class="banner">🗓️ Tournament kicks off June 11 — everyone starts at 0. Standings update automatically once matches are played.</div>';
+  }
+  if (data.warnings && data.warnings.length) {
+    banner.innerHTML += '<div class="banner err">⚠️ ' + data.warnings.join(" · ") + '</div>';
+  }
+
+  // Leaderboard
+  const board = document.getElementById("board");
+  const players = data.players || [];
+  if (!players.length) {
+    board.innerHTML = '<div class="banner">No players found yet. Once <code>draft.json</code> is filled in, picks will appear here.</div>';
+  } else {
+    board.innerHTML = "";
+    players.forEach(p => {
+      const isLeader = p.rank === 1 && p.totalPoints > 0;
+      const row = document.createElement("div");
+      row.className = "row" + (isLeader ? " leader" : "") + (openPlayers.has(p.name) ? " open" : "");
+
+      const rb = rankBadge(p.rank);
+      const medalClass = p.rank === 2 ? " medal2" : p.rank === 3 ? " medal3" : "";
+
+      const teamsHtml = (p.teams || []).map(t => {
+        const potCls = POT_NAMES[t.pot] || "pot1";
+        const zero = t.points === 0 ? " zero" : "";
+        return `<div class="teamline">
+            <div>
+              <span class="tname">${escapeHtml(t.name)}</span>
+              <span class="pot ${potCls}">P${t.pot}</span>
+              <div class="tmeta">${escapeHtml(t.furthestStage)} · base ${t.basePoints} × ${t.multiplier}</div>
+            </div>
+            <div class="tpts${zero}">${fmtPts(t.points)}</div>
+          </div>`;
+      }).join("");
+
+      row.innerHTML = `
+        <div class="rowhead">
+          <div class="rank${medalClass}">${rb}</div>
+          <div>
+            <div class="pname">${escapeHtml(p.name)} ${isLeader ? '<span class="crown">👑</span>' : ''}</div>
+            <div class="psub">${p.teamsAdvancedCount || 0} of ${(p.teams||[]).length} teams advanced</div>
+          </div>
+          <div class="pts"><div class="num">${fmtPts(p.totalPoints)}</div><div class="lbl">pts</div></div>
+          <div class="chev">▼</div>
+        </div>
+        <div class="detail">${teamsHtml}</div>`;
+
+      row.querySelector(".rowhead").addEventListener("click", () => {
+        row.classList.toggle("open");
+        if (row.classList.contains("open")) openPlayers.add(p.name);
+        else openPlayers.delete(p.name);
+      });
+      board.appendChild(row);
+    });
+  }
+
+  // Legend
+  document.getElementById("legend").hidden = false;
+
+  // Upcoming
+  const up = data.upcomingMatches || [];
+  const upSec = document.getElementById("upcoming");
+  const fx = document.getElementById("fixtures");
+  if (up.length) {
+    upSec.hidden = false;
+    fx.innerHTML = up.slice(0, 8).map(m => `
+      <div class="fx">
+        <div>${escapeHtml(m.homeTeam)} <span style="color:var(--muted)">vs</span> ${escapeHtml(m.awayTeam)}
+          <div class="stage">${STAGE_PRETTY[m.stage] || m.stage || ""}</div></div>
+        <div class="when">${fmtKickoff(m.utcDate)}</div>
+      </div>`).join("");
+  } else {
+    upSec.hidden = true;
+  }
+}
+
+function escapeHtml(s) {
+  return String(s == null ? "" : s)
+    .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;").replace(/'/g,"&#39;");
+}
+
+function showError(msg) {
+  document.getElementById("board").innerHTML =
+    '<div class="banner err">⚠️ ' + escapeHtml(msg) +
+    '<br><span style="font-size:12px;color:var(--muted)">Retrying automatically…</span></div>';
+  document.getElementById("updated").textContent = "Couldn’t load standings";
+}
+
+async function load() {
+  try {
+    const res = await fetch("standings.json?t=" + Date.now(), { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    render(data);
+  } catch (e) {
+    // Keep the last good render if we already have one; only blank-screen on first load.
+    if (!document.querySelector(".row")) {
+      showError("Couldn’t load the latest standings (" + e.message + ").");
+    } else {
+      document.getElementById("updated").textContent += " · refresh failed, showing last data";
+    }
+  }
+}
+
+load();
+setInterval(load, REFRESH_MS);
+// Re-fetch and refresh relative timestamps when the tab regains focus.
+document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });
+</script>
+</body>
+</html>

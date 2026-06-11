@@ -1,0 +1,13 @@
+{
+  "_comment": "Commissioner fills this in after the draft. Map each drafted team to its player. Keys may be a football-data.org team ID (preferred, e.g. \"760\") OR a team name exactly as it appears in pots.json (e.g. \"Spain\"). Players: Drew, Eriku, Rain, Andy, Dev, Gav, Rea. 42 of 48 teams get drafted (~6 each). 'manualOverrides' optionally forces a team's furthest stage if the API ever mislabels something: key = team id or name, value = stage name (GROUP_STAGE | LAST_32 | LAST_16 | QUARTER_FINALS | SEMI_FINALS | FINAL | CHAMPION).",
+
+  "Spain": "Drew",
+  "Argentina": "Eriku",
+  "France": "Rain",
+  "England": "Andy",
+  "Brazil": "Dev",
+  "Portugal": "Gav",
+  "Netherlands": "Rea",
+
+  "manualOverrides": {}
+}
