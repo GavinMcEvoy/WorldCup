@@ -1,13 +1,54 @@
 {
-  "_comment": "Commissioner fills this in after the draft. Map each drafted team to its player. Keys may be a football-data.org team ID (preferred, e.g. \"760\") OR a team name exactly as it appears in pots.json (e.g. \"Spain\"). Players: Drew, Eriku, Rain, Andy, Dev, Gav, Rea. 42 of 48 teams get drafted (~6 each). 'manualOverrides' optionally forces a team's furthest stage if the API ever mislabels something: key = team id or name, value = stage name (GROUP_STAGE | LAST_32 | LAST_16 | QUARTER_FINALS | SEMI_FINALS | FINAL | CHAMPION).",
+  "_comment": "Team -> player draft mapping. Keys are team names exactly as in pots.json (matched to team IDs at scoring time). Players: Drew, Eriku, Rain, Andy, Dev, Gav, Rea. 42 of 48 teams drafted (6 each); undrafted: Cape Verde, Curacao, Iran, Iraq, South Africa, Tunisia. 'manualOverrides' forces a team's furthest stage if the API ever mislabels something: key = team id or name, value = GROUP_STAGE | LAST_32 | LAST_16 | QUARTER_FINALS | SEMI_FINALS | FINAL | CHAMPION.",
 
-  "Spain": "Drew",
-  "Argentina": "Eriku",
-  "France": "Rain",
-  "England": "Andy",
+  "Netherlands": "Drew",
+  "Uruguay": "Drew",
+  "Switzerland": "Drew",
+  "Czechia": "Drew",
+  "Ivory Coast": "Drew",
+  "Uzbekistan": "Drew",
+
+  "France": "Eriku",
+  "Morocco": "Eriku",
+  "Ecuador": "Eriku",
+  "Scotland": "Eriku",
+  "Bosnia and Herzegovina": "Eriku",
+  "Haiti": "Eriku",
+
+  "Argentina": "Rain",
+  "Senegal": "Rain",
+  "United States": "Rain",
+  "Austria": "Rain",
+  "Paraguay": "Rain",
+  "Australia": "Rain",
+
+  "Portugal": "Andy",
+  "Belgium": "Andy",
+  "Norway": "Andy",
+  "South Korea": "Andy",
+  "Panama": "Andy",
+  "Jordan": "Andy",
+
   "Brazil": "Dev",
-  "Portugal": "Gav",
-  "Netherlands": "Rea",
+  "Mexico": "Dev",
+  "Canada": "Dev",
+  "Saudi Arabia": "Dev",
+  "Ghana": "Dev",
+  "Algeria": "Dev",
+
+  "Spain": "Gav",
+  "England": "Gav",
+  "Turkiye": "Gav",
+  "Sweden": "Gav",
+  "Egypt": "Gav",
+  "DR Congo": "Gav",
+
+  "Germany": "Rea",
+  "Colombia": "Rea",
+  "Japan": "Rea",
+  "Croatia": "Rea",
+  "New Zealand": "Rea",
+  "Qatar": "Rea",
 
   "manualOverrides": {}
 }
