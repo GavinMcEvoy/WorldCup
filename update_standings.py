@@ -30,12 +30,13 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 API_BASE = "https://api.football-data.org/v4"
 COMPETITION = "WC"
 
-# Stage name (as the API reports it) -> (rank, label, base points).
-# Higher rank = further in the tournament. Champion is derived from the FINAL
-# winner, not from a stage value. THIRD_PLACE shares the SEMI_FINALS tier
-# (those teams reached the semis); it never beats the FINAL/CHAMPION tiers.
+# Furthest-stage BONUS (as the API reports it) -> (rank, label, bonus points).
+# This stacks ON TOP of per-match win/draw points. Group stage is 0 — being in
+# the field earns nothing; you score by winning matches and by advancing.
+# Champion is derived from the FINAL winner, not a stage value. THIRD_PLACE
+# shares the SEMI_FINALS tier; it never beats the FINAL/CHAMPION tiers.
 STAGE_TABLE = {
-    "GROUP_STAGE":     (0, "Group Stage",   1),
+    "GROUP_STAGE":     (0, "Group Stage",   0),
     "LAST_32":         (1, "Round of 32",   2),
     "LAST_16":         (2, "Round of 16",   3),
     "QUARTER_FINALS":  (3, "Quarterfinal",  5),
@@ -45,12 +46,62 @@ STAGE_TABLE = {
 }
 CHAMPION = (6, "Champion", 14)
 
+# Per-match result points, awarded in EVERY round (group stage included),
+# before the pot multiplier. A knockout tie decided on penalties counts as a
+# WIN for whoever advanced (nobody draws their way out of a knockout).
+WIN_POINTS = 0.75
+DRAW_POINTS = 0.25
+LOSS_POINTS = 0.0
+
 # Stages we treat as "appeared => advanced". A team listed in a LAST_16 fixture
 # has, by definition, advanced out of the Round of 32, so the mere existence of
 # the fixture proves the stage was reached. We still require FINISHED matches to
 # award the CHAMPION bonus (need a confirmed winner).
 KNOCKOUT_STAGES = {"LAST_32", "LAST_16", "QUARTER_FINALS",
                    "SEMI_FINALS", "THIRD_PLACE", "FINAL"}
+
+
+def match_result_points(matches, tracked_ids):
+    """
+    Tally FINISHED-match results per tracked team.
+    Returns {team_id: {"win","draw","loss","matchPoints"}} (matchPoints is the
+    raw, pre-multiplier sum). A penalty-shootout tie is resolved to the side
+    that advanced via the penalties tally.
+    """
+    tally = {tid: {"win": 0, "draw": 0, "loss": 0, "matchPoints": 0.0}
+             for tid in tracked_ids}
+
+    for m in matches:
+        if m.get("status") != "FINISHED":
+            continue
+        home = (m.get("homeTeam") or {}).get("id")
+        away = (m.get("awayTeam") or {}).get("id")
+        if home not in tracked_ids and away not in tracked_ids:
+            continue
+        score = m.get("score") or {}
+        winner = score.get("winner")
+
+        # Resolve penalty-shootout "draws" to whoever advanced.
+        if winner == "DRAW" and score.get("duration") == "PENALTY_SHOOTOUT":
+            pens = score.get("penalties") or {}
+            ph, pa = pens.get("home"), pens.get("away")
+            if isinstance(ph, int) and isinstance(pa, int) and ph != pa:
+                winner = "HOME_TEAM" if ph > pa else "AWAY_TEAM"
+
+        for tid, is_home in ((home, True), (away, False)):
+            if tid not in tracked_ids:
+                continue
+            if winner == "DRAW":
+                tally[tid]["draw"] += 1
+                tally[tid]["matchPoints"] += DRAW_POINTS
+            elif (winner == "HOME_TEAM") == is_home:
+                tally[tid]["win"] += 1
+                tally[tid]["matchPoints"] += WIN_POINTS
+            else:
+                tally[tid]["loss"] += 1
+                tally[tid]["matchPoints"] += LOSS_POINTS
+
+    return tally
 
 
 def load_json(path):
@@ -180,6 +231,7 @@ def main():
 
     tracked_ids = set(teams_by_id.keys())
     furthest = compute_furthest_stages(matches, tracked_ids)
+    results = match_result_points(matches, tracked_ids)
 
     # Apply manual overrides (force a team's furthest stage by stage name).
     # overrides: {"<teamId or name>": "FINAL" | "CHAMPION" | "QUARTER_FINALS" ...}
@@ -198,6 +250,8 @@ def main():
                   f"a known stage; ignoring.", file=sys.stderr)
 
     # Build per-player breakdowns.
+    # Team points = (match win/draw points + furthest-stage bonus) x pot mult.
+    # No floor: a team that hasn't played, or has only lost, scores 0.
     players = {}  # name -> {teams: [...], totalPoints, teamsAdvancedCount}
     for tid, player in team_to_player.items():
         meta = teams_by_id.get(tid)
@@ -205,9 +259,10 @@ def main():
             continue  # team drafted but id missing from pots.json
         pot = meta["pot"]
         mult = multipliers.get(pot, 1)
-        # Every confirmed team floors at the Group Stage value (1 x pot) — that
-        # is the reward for being in the tournament / surviving the group draw.
-        rank, label, base = furthest.get(tid, STAGE_TABLE["GROUP_STAGE"])
+        rank, label, bonus = furthest.get(tid, STAGE_TABLE["GROUP_STAGE"])
+        rec = results.get(tid, {"win": 0, "draw": 0, "loss": 0, "matchPoints": 0.0})
+        match_pts = rec["matchPoints"]
+        base = round(match_pts + bonus, 2)       # pre-multiplier subtotal
         pts = round(base * mult, 2)
         entry = players.setdefault(
             player, {"name": player, "teams": [], "totalPoints": 0.0,
@@ -215,6 +270,8 @@ def main():
         entry["teams"].append({
             "name": meta["name"], "pot": pot, "multiplier": mult,
             "furthestStage": label, "stageRank": rank,
+            "wins": rec["win"], "draws": rec["draw"], "losses": rec["loss"],
+            "matchPoints": round(match_pts, 2), "stageBonus": bonus,
             "basePoints": base, "points": pts,
         })
         entry["totalPoints"] = round(entry["totalPoints"] + pts, 2)
@@ -263,9 +320,10 @@ def main():
         "players": player_list,
         "upcomingMatches": upcoming[:32],
         "scoringLegend": {
-            "stagePoints": {"Group": 1, "Round of 32": 2, "Round of 16": 3,
-                            "Quarterfinal": 5, "Semifinal": 7,
-                            "Final": 10, "Champion": 14},
+            "matchPoints": {"Win": WIN_POINTS, "Draw": DRAW_POINTS, "Loss": 0},
+            "stageBonus": {"Round of 32": 2, "Round of 16": 3,
+                           "Quarterfinal": 5, "Semifinal": 7,
+                           "Final": 10, "Champion": 14},
             "potMultipliers": {"1": 1, "2": 1.5, "3": 2, "4": 3},
         },
         "warnings": ([f"{len(missing_ids)} team(s) missing IDs in pots.json"]

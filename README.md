@@ -14,18 +14,28 @@ public URL, is built for phones, and needs **no server and no login** for viewer
 
 Each team scores points for the **furthest stage it reaches**, times its **pot multiplier**.
 
-| Furthest round | Points |
-|----------------|:------:|
-| Group          | 1      |
-| Round of 32    | 2      |
-| Round of 16    | 3      |
-| Quarterfinal   | 5      |
-| Semifinal      | 7      |
-| Final          | 10     |
-| Champion       | 14     |
+**Match points** (earned every round, group stage included):
 
-Every team in the field scores at least 1 (× pot) — there is no zero. Deeper runs
-and bigger underdogs are worth progressively more.
+| Result | Points |
+|--------|:------:|
+| Win    | 0.75   |
+| Draw   | 0.25   |
+| Loss   | 0      |
+
+**Advance bonus** — the single furthest round a team reaches (does *not* stack per round):
+
+| Furthest round | Bonus |
+|----------------|:-----:|
+| Round of 32    | 2     |
+| Round of 16    | 3     |
+| Quarterfinal   | 5     |
+| Semifinal      | 7     |
+| Final          | 10    |
+| Champion       | 14    |
+
+**Team points = (match points + advance bonus) × pot multiplier.** A team scores
+nothing until it actually plays — no floor for simply being in the field. Deeper
+runs and bigger underdogs are worth progressively more.
 
 | Pot | Multiplier |
 |-----|:----------:|
@@ -34,8 +44,7 @@ and bigger underdogs are worth progressively more.
 | 3   | ×2   |
 | 4   | ×3   |
 
-**Team points = stage points × pot multiplier.** A player's score is the sum of their
-~6 teams. Most points wins.
+A player's score is the sum of their ~6 teams. Most points wins.
 
 ## One-time setup
 

@@ -151,9 +151,16 @@
     <h2>Scoring rules</h2>
     <div class="rulesgrid">
       <table class="rtable">
-        <thead><tr><th>Furthest Round</th><th class="num">Stage Pts</th></tr></thead>
+        <thead><tr><th>Per Match</th><th class="num">Points</th></tr></thead>
         <tbody>
-          <tr><td>Group</td><td class="num">1</td></tr>
+          <tr><td>Win</td><td class="num">0.75</td></tr>
+          <tr><td>Draw</td><td class="num">0.25</td></tr>
+          <tr><td>Loss</td><td class="num">0</td></tr>
+        </tbody>
+      </table>
+      <table class="rtable">
+        <thead><tr><th>Advance Bonus</th><th class="num">Points</th></tr></thead>
+        <tbody>
           <tr><td>Round of 32</td><td class="num">2</td></tr>
           <tr><td>Round of 16</td><td class="num">3</td></tr>
           <tr><td>Quarterfinal</td><td class="num">5</td></tr>
@@ -172,7 +179,7 @@
         </tbody>
       </table>
     </div>
-    <div class="formula"><b>Team Points = Stage Points × Pot Multiplier.</b> A player's score is the sum of their teams. Everyone scores 1 (× pot) just for being in the tournament; deeper runs and bigger underdogs are worth more.</div>
+    <div class="formula"><b>Team Points = (match points + advance bonus) × pot multiplier.</b> Win/draw points are earned every round, group stage included. The advance bonus is the single furthest round a team reaches (it doesn't stack per round). No points until a team actually plays — deeper runs and bigger underdogs are worth more.</div>
   </section>
 
   <section class="up" id="up" hidden>
@@ -217,7 +224,7 @@ function render(data){
 
   const b=document.getElementById("banner"); b.innerHTML="";
   if(!data.tournamentStarted)
-    b.innerHTML += '<div class="banner note">Tournament kicks off June 11 — group results are coming in. Everyone scores 1 (× pot) for being in the field.</div>';
+    b.innerHTML += '<div class="banner note">Tournament kicks off June 11 — points start landing as group results come in.</div>';
   if(data.warnings && data.warnings.length)
     b.innerHTML += '<div class="banner err">⚠ '+data.warnings.map(esc).join(" · ")+'</div>';
 
@@ -239,18 +246,22 @@ function render(data){
         '<td class="exp"><span class="chev">▶</span></td>';
 
       const teams=(p.teams||[]).map(t=>{
-        const cls = t.points===0 ? "zero" : (t.stageRank===0 ? "base" : "");
+        const cls = t.points===0 ? "zero" : "";
+        const wdl = (t.wins||0)+"-"+(t.draws||0)+"-"+(t.losses||0);
+        const bonus = t.stageBonus ? " +"+t.stageBonus : "";
+        const calc = "("+fmt(t.matchPoints||0)+bonus+") × "+t.multiplier;
         return '<tr><td class="tn">'+esc(t.name)+'</td>'+
           '<td class="ctr"><span class="potpill '+(POT[t.pot]||"p1")+'">P'+t.pot+'</span></td>'+
+          '<td class="ctr">'+wdl+'</td>'+
           '<td>'+esc(t.furthestStage)+'</td>'+
-          '<td class="num">'+t.basePoints+' × '+t.multiplier+'</td>'+
+          '<td class="num">'+calc+'</td>'+
           '<td class="num tp '+cls+'">'+fmt(t.points)+'</td></tr>';
       }).join("");
 
       const dr=document.createElement("tr");
       dr.className="drow";
       dr.innerHTML='<td colspan="5"><div class="inner"><table class="subt">'+
-        '<thead><tr><th>Team</th><th class="ctr">Pot</th><th>Furthest</th><th class="num">Calc</th><th class="num">Pts</th></tr></thead>'+
+        '<thead><tr><th>Team</th><th class="ctr">Pot</th><th class="ctr">W-D-L</th><th>Furthest</th><th class="num">Calc</th><th class="num">Pts</th></tr></thead>'+
         '<tbody>'+teams+'</tbody></table></div></td>';
 
       tr.addEventListener("click",()=>{
