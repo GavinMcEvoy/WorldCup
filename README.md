@@ -14,15 +14,18 @@ public URL, is built for phones, and needs **no server and no login** for viewer
 
 Each team scores points for the **furthest stage it reaches**, times its **pot multiplier**.
 
-| Stage          | Points |
+| Furthest round | Points |
 |----------------|:------:|
-| Round of 32    | 1      |
-| Round of 16    | 2      |
-| Quarterfinal   | 3      |
-| Semifinal      | 5      |
-| Final          | 7      |
-| Champion       | 10     |
-| Out in groups  | 0      |
+| Group          | 1      |
+| Round of 32    | 2      |
+| Round of 16    | 3      |
+| Quarterfinal   | 5      |
+| Semifinal      | 7      |
+| Final          | 10     |
+| Champion       | 14     |
+
+Every team in the field scores at least 1 (× pot) — there is no zero. Deeper runs
+and bigger underdogs are worth progressively more.
 
 | Pot | Multiplier |
 |-----|:----------:|

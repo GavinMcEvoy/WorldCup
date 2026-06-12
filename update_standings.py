@@ -35,15 +35,15 @@ COMPETITION = "WC"
 # winner, not from a stage value. THIRD_PLACE shares the SEMI_FINALS tier
 # (those teams reached the semis); it never beats the FINAL/CHAMPION tiers.
 STAGE_TABLE = {
-    "GROUP_STAGE":     (0, "Group Stage",   0),
-    "LAST_32":         (1, "Round of 32",   1),
-    "LAST_16":         (2, "Round of 16",   2),
-    "QUARTER_FINALS":  (3, "Quarterfinal",  3),
-    "SEMI_FINALS":     (4, "Semifinal",     5),
-    "THIRD_PLACE":     (4, "Semifinal",     5),  # 3rd-place game = reached SF
-    "FINAL":           (5, "Final",         7),
+    "GROUP_STAGE":     (0, "Group Stage",   1),
+    "LAST_32":         (1, "Round of 32",   2),
+    "LAST_16":         (2, "Round of 16",   3),
+    "QUARTER_FINALS":  (3, "Quarterfinal",  5),
+    "SEMI_FINALS":     (4, "Semifinal",     7),
+    "THIRD_PLACE":     (4, "Semifinal",     7),  # 3rd-place game = reached SF
+    "FINAL":           (5, "Final",        10),
 }
-CHAMPION = (6, "Champion", 10)
+CHAMPION = (6, "Champion", 14)
 
 # Stages we treat as "appeared => advanced". A team listed in a LAST_16 fixture
 # has, by definition, advanced out of the Round of 32, so the mere existence of
@@ -205,7 +205,9 @@ def main():
             continue  # team drafted but id missing from pots.json
         pot = meta["pot"]
         mult = multipliers.get(pot, 1)
-        rank, label, base = furthest.get(tid, (0, "Group Stage", 0))
+        # Every confirmed team floors at the Group Stage value (1 x pot) — that
+        # is the reward for being in the tournament / surviving the group draw.
+        rank, label, base = furthest.get(tid, STAGE_TABLE["GROUP_STAGE"])
         pts = round(base * mult, 2)
         entry = players.setdefault(
             player, {"name": player, "teams": [], "totalPoints": 0.0,
@@ -261,9 +263,9 @@ def main():
         "players": player_list,
         "upcomingMatches": upcoming[:32],
         "scoringLegend": {
-            "stagePoints": {"Round of 32": 1, "Round of 16": 2,
-                            "Quarterfinal": 3, "Semifinal": 5,
-                            "Final": 7, "Champion": 10},
+            "stagePoints": {"Group": 1, "Round of 32": 2, "Round of 16": 3,
+                            "Quarterfinal": 5, "Semifinal": 7,
+                            "Final": 10, "Champion": 14},
             "potMultipliers": {"1": 1, "2": 1.5, "3": 2, "4": 3},
         },
         "warnings": ([f"{len(missing_ids)} team(s) missing IDs in pots.json"]
