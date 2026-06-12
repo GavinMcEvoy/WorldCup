@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-06-12T20:10:33.719391Z",
+  "lastUpdated": "2026-06-12T23:16:47.118148Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 2,
+  "finishedMatches": 3,
   "tournamentStarted": true,
   "players": [
     {
@@ -442,13 +442,6 @@
   ],
   "upcomingMatches": [
     {
-      "utcDate": "2026-06-12T19:00:00Z",
-      "stage": "GROUP_STAGE",
-      "status": "PAUSED",
-      "homeTeam": "Canada",
-      "awayTeam": "Bosnia-Herzegovina"
-    },
-    {
       "utcDate": "2026-06-13T01:00:00Z",
       "stage": "GROUP_STAGE",
       "status": "TIMED",
@@ -664,6 +657,13 @@
       "status": "TIMED",
       "homeTeam": "Germany",
       "awayTeam": "Ivory Coast"
+    },
+    {
+      "utcDate": "2026-06-21T00:00:00Z",
+      "stage": "GROUP_STAGE",
+      "status": "TIMED",
+      "homeTeam": "Ecuador",
+      "awayTeam": "Curaçao"
     }
   ],
   "scoringLegend": {
