@@ -18,20 +18,20 @@ Each team scores points for the **furthest stage it reaches**, times its **pot m
 
 | Result | Points |
 |--------|:------:|
-| Win    | 0.75   |
-| Draw   | 0.25   |
+| Win    | 3      |
+| Draw   | 1      |
 | Loss   | 0      |
 
 **Advance bonus** — the single furthest round a team reaches (does *not* stack per round):
 
 | Furthest round | Bonus |
 |----------------|:-----:|
-| Round of 32    | 2     |
-| Round of 16    | 3     |
-| Quarterfinal   | 5     |
-| Semifinal      | 7     |
-| Final          | 10    |
-| Champion       | 14    |
+| Round of 32    | 8     |
+| Round of 16    | 12    |
+| Quarterfinal   | 20    |
+| Semifinal      | 28    |
+| Final          | 40    |
+| Champion       | 56    |
 
 **Team points = (match points + advance bonus) × pot multiplier.** A team scores
 nothing until it actually plays — no floor for simply being in the field. Deeper

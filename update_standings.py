@@ -37,21 +37,21 @@ COMPETITION = "WC"
 # shares the SEMI_FINALS tier; it never beats the FINAL/CHAMPION tiers.
 STAGE_TABLE = {
     "GROUP_STAGE":     (0, "Group Stage",   0),
-    "LAST_32":         (1, "Round of 32",   2),
-    "LAST_16":         (2, "Round of 16",   3),
-    "QUARTER_FINALS":  (3, "Quarterfinal",  5),
-    "SEMI_FINALS":     (4, "Semifinal",     7),
-    "THIRD_PLACE":     (4, "Semifinal",     7),  # 3rd-place game = reached SF
-    "FINAL":           (5, "Final",        10),
+    "LAST_32":         (1, "Round of 32",   8),
+    "LAST_16":         (2, "Round of 16",  12),
+    "QUARTER_FINALS":  (3, "Quarterfinal", 20),
+    "SEMI_FINALS":     (4, "Semifinal",    28),
+    "THIRD_PLACE":     (4, "Semifinal",    28),  # 3rd-place game = reached SF
+    "FINAL":           (5, "Final",        40),
 }
-CHAMPION = (6, "Champion", 14)
+CHAMPION = (6, "Champion", 56)
 
 # Per-match result points, awarded in EVERY round (group stage included),
 # before the pot multiplier. A knockout tie decided on penalties counts as a
 # WIN for whoever advanced (nobody draws their way out of a knockout).
-WIN_POINTS = 0.75
-DRAW_POINTS = 0.25
-LOSS_POINTS = 0.0
+WIN_POINTS = 3
+DRAW_POINTS = 1
+LOSS_POINTS = 0
 
 # Stages we treat as "appeared => advanced". A team listed in a LAST_16 fixture
 # has, by definition, advanced out of the Round of 32, so the mere existence of
@@ -321,9 +321,9 @@ def main():
         "upcomingMatches": upcoming[:32],
         "scoringLegend": {
             "matchPoints": {"Win": WIN_POINTS, "Draw": DRAW_POINTS, "Loss": 0},
-            "stageBonus": {"Round of 32": 2, "Round of 16": 3,
-                           "Quarterfinal": 5, "Semifinal": 7,
-                           "Final": 10, "Champion": 14},
+            "stageBonus": {"Round of 32": 8, "Round of 16": 12,
+                           "Quarterfinal": 20, "Semifinal": 28,
+                           "Final": 40, "Champion": 56},
             "potMultipliers": {"1": 1, "2": 1.5, "3": 2, "4": 3},
         },
         "warnings": ([f"{len(missing_ids)} team(s) missing IDs in pots.json"]
