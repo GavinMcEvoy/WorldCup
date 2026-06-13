@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T00:01:56.320231Z",
+  "lastUpdated": "2026-06-13T00:11:18.851423Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 0,
   "finishedMatches": 0,
@@ -653,7 +653,7 @@
   "upcomingMatches": [],
   "scoringLegend": {
     "matchPoints": {
-      "Win": 3,
+      "Win": 2,
       "Draw": 1,
       "Loss": 0
     },

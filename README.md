@@ -18,7 +18,7 @@ Each team scores points for the **furthest stage it reaches**, times its **pot m
 
 | Result | Points |
 |--------|:------:|
-| Win    | 3      |
+| Win    | 2      |
 | Draw   | 1      |
 | Loss   | 0      |
 

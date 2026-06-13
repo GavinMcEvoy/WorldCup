@@ -49,7 +49,7 @@ CHAMPION = (6, "Champion", 56)
 # Per-match result points, awarded in EVERY round (group stage included),
 # before the pot multiplier. A knockout tie decided on penalties counts as a
 # WIN for whoever advanced (nobody draws their way out of a knockout).
-WIN_POINTS = 3
+WIN_POINTS = 2
 DRAW_POINTS = 1
 LOSS_POINTS = 0
 
