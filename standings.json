@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T21:15:40.237407Z",
+  "lastUpdated": "2026-06-13T23:04:03.094373Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 5,
@@ -654,7 +654,7 @@
     {
       "utcDate": "2026-06-13T22:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "PAUSED",
       "homeTeam": "Brazil",
       "awayTeam": "Morocco"
     },
