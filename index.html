@@ -158,28 +158,24 @@
           <tr><td>Loss</td><td class="num">0</td></tr>
         </tbody>
       </table>
-      <table class="rtable">
-        <thead><tr><th>Advance Bonus</th><th class="num">Points</th></tr></thead>
-        <tbody>
-          <tr><td>Round of 32</td><td class="num">8</td></tr>
-          <tr><td>Round of 16</td><td class="num">12</td></tr>
-          <tr><td>Quarterfinal</td><td class="num">20</td></tr>
-          <tr><td>Semifinal</td><td class="num">28</td></tr>
-          <tr><td>Final</td><td class="num">40</td></tr>
-          <tr><td>Champion</td><td class="num">56</td></tr>
-        </tbody>
-      </table>
-      <table class="rtable">
-        <thead><tr><th>Pot</th><th class="num">Multiplier</th></tr></thead>
-        <tbody>
-          <tr><td>Pot 1</td><td class="num">1.0×</td></tr>
-          <tr><td>Pot 2</td><td class="num">1.5×</td></tr>
-          <tr><td>Pot 3</td><td class="num">2.0×</td></tr>
-          <tr><td>Pot 4</td><td class="num">3.0×</td></tr>
-        </tbody>
-      </table>
     </div>
-    <div class="formula"><b>Team Points = (match points + advance bonus) × pot multiplier.</b> Win/draw points are earned every round, group stage included. The advance bonus is the single furthest round a team reaches (it doesn't stack per round). No points until a team actually plays — deeper runs and bigger underdogs are worth more.</div>
+    <h2 style="margin-top:16px">Stage points (by pot)</h2>
+    <table class="rtable" style="width:100%">
+      <thead><tr>
+        <th>Furthest</th>
+        <th class="num">Pot 1</th><th class="num">Pot 2</th>
+        <th class="num">Pot 3</th><th class="num">Pot 4</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>Round of 32</td><td class="num">8</td><td class="num">12</td><td class="num">18</td><td class="num">26</td></tr>
+        <tr><td>Round of 16</td><td class="num">14</td><td class="num">19</td><td class="num">26</td><td class="num">36</td></tr>
+        <tr><td>Quarterfinal</td><td class="num">24</td><td class="num">30</td><td class="num">38</td><td class="num">50</td></tr>
+        <tr><td>Semifinal</td><td class="num">38</td><td class="num">44</td><td class="num">52</td><td class="num">64</td></tr>
+        <tr><td>Final</td><td class="num">58</td><td class="num">62</td><td class="num">68</td><td class="num">78</td></tr>
+        <tr><td>Champion</td><td class="num">88</td><td class="num">90</td><td class="num">94</td><td class="num">100</td></tr>
+      </tbody>
+    </table>
+    <div class="formula"><b>Team Points = match points + stage points.</b> Match points (win 2 / draw 1) are flat for everyone. Stage points are for the single furthest round a team reaches — weaker pots earn more for the same round (a Pot 4 surviving to the Round of 32 is worth 26 vs a Pot 1's 8), but the premium fades toward the final so no single underdog run runs away with the pool. No points until a team actually plays.</div>
   </section>
 
   <section class="up" id="up" hidden>
@@ -248,8 +244,8 @@ function render(data){
       const teams=(p.teams||[]).map(t=>{
         const cls = t.points===0 ? "zero" : "";
         const wdl = (t.wins||0)+"-"+(t.draws||0)+"-"+(t.losses||0);
-        const bonus = t.stageBonus ? " +"+t.stageBonus : "";
-        const calc = "("+fmt(t.matchPoints||0)+bonus+") × "+t.multiplier;
+        const stage = t.stagePoints ? " + "+t.stagePoints+" stage" : "";
+        const calc = fmt(t.matchPoints||0)+" match"+stage;
         return '<tr><td class="tn">'+esc(t.name)+'</td>'+
           '<td class="ctr"><span class="potpill '+(POT[t.pot]||"p1")+'">P'+t.pot+'</span></td>'+
           '<td class="ctr">'+wdl+'</td>'+

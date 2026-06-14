@@ -22,29 +22,35 @@ Each team scores points for the **furthest stage it reaches**, times its **pot m
 | Draw   | 1      |
 | Loss   | 0      |
 
-**Advance bonus** — the single furthest round a team reaches (does *not* stack per round):
+**Stage points** — for the single furthest round a team reaches (does *not* stack per round):
 
-| Furthest round | Bonus |
-|----------------|:-----:|
-| Round of 32    | 8     |
-| Round of 16    | 12    |
-| Quarterfinal   | 20    |
-| Semifinal      | 28    |
-| Final          | 40    |
-| Champion       | 56    |
+| Furthest round | Stage pts |
+|----------------|:---------:|
+| Round of 32    | 8         |
+| Round of 16    | 14        |
+| Quarterfinal   | 24        |
+| Semifinal      | 38        |
+| Final          | 58        |
+| Champion       | 88        |
 
-**Team points = (match points + advance bonus) × pot multiplier.** A team scores
-nothing until it actually plays — no floor for simply being in the field. Deeper
-runs and bigger underdogs are worth progressively more.
+The **pot multiplier applies to stage points only** (not match points):
 
-| Pot | Multiplier |
-|-----|:----------:|
-| 1   | ×1   |
-| 2   | ×1.5 |
-| 3   | ×2   |
-| 4   | ×3   |
+| Pot | Stage × |
+|-----|:-------:|
+| 1   | ×1     |
+| 2   | ×1.35  |
+| 3   | ×1.8   |
+| 4   | ×2.4   |
 
+**Team points = match points + (stage points × pot multiplier).** A team scores
+nothing until it actually plays. Match points are flat for everyone, so routine
+group wins aren't inflated; the multiplier rewards an underdog only for going
+*far*, and the ×2.4 cap stops any single deep run from auto-winning the pool.
 A player's score is the sum of their ~6 teams. Most points wins.
+
+This curve was tuned by Monte-Carlo over the actual draft so that (a) strong
+teams are the top scorers in expectation, (b) taking weak teams is rewarded when
+they advance, and (c) no single underdog result is an instant win.
 
 ## One-time setup
 

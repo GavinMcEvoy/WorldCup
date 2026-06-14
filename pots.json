@@ -1,10 +1,10 @@
 {
-  "_comment": "All 48 teams for the 2026 World Cup mapped to their FIFA draw pot (1-4). 'id' is the football-data.org team ID — fetch the WC team list from the API and fill these in, then match results by id (not name). 'multiplier' is your scoring tier: Pot1 x1, Pot2 x1.5, Pot3 x2, Pot4 x3.",
+  "_comment": "All 48 teams for the 2026 World Cup mapped to their FIFA draw pot (1-4). 'id' is the football-data.org team ID — match results by id (not name). 'multipliers' apply to STAGE points only (not match win/draw points): Pot1 x1, Pot2 x1.35, Pot3 x1.8, Pot4 x2.4. Capped at 2.4 so a single underdog deep run can't auto-win the pool.",
   "multipliers": {
     "1": 1,
-    "2": 1.5,
-    "3": 2,
-    "4": 3
+    "2": 1.35,
+    "3": 1.8,
+    "4": 2.4
   },
   "teams": [
     {

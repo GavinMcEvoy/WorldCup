@@ -35,16 +35,32 @@ COMPETITION = "WC"
 # the field earns nothing; you score by winning matches and by advancing.
 # Champion is derived from the FINAL winner, not a stage value. THIRD_PLACE
 # shares the SEMI_FINALS tier; it never beats the FINAL/CHAMPION tiers.
+# (rank, label) per stage. The actual POINTS come from STAGE_POINTS_BY_POT below,
+# because the reward for reaching a stage depends on the team's pot.
 STAGE_TABLE = {
-    "GROUP_STAGE":     (0, "Group Stage",   0),
-    "LAST_32":         (1, "Round of 32",   8),
-    "LAST_16":         (2, "Round of 16",  12),
-    "QUARTER_FINALS":  (3, "Quarterfinal", 20),
-    "SEMI_FINALS":     (4, "Semifinal",    28),
-    "THIRD_PLACE":     (4, "Semifinal",    28),  # 3rd-place game = reached SF
-    "FINAL":           (5, "Final",        40),
+    "GROUP_STAGE":     (0, "Group Stage"),
+    "LAST_32":         (1, "Round of 32"),
+    "LAST_16":         (2, "Round of 16"),
+    "QUARTER_FINALS":  (3, "Quarterfinal"),
+    "SEMI_FINALS":     (4, "Semifinal"),
+    "THIRD_PLACE":     (4, "Semifinal"),   # 3rd-place game = reached SF
+    "FINAL":           (5, "Final"),
 }
-CHAMPION = (6, "Champion", 56)
+CHAMPION_RANK = 6
+CHAMPION_LABEL = "Champion"
+
+# Stage points indexed by pot, then by rank-1 (R32..Champion = indices 0..5).
+# A weaker pot earns a big premium for the SURPRISING early rounds, and that
+# premium fades toward the final (a final is a final). Tuned by Monte-Carlo over
+# the actual draft so strong teams score most, underdog runs pay off, and a
+# Pot-4 finalist still sits below a Pot-1 champion (no instant win).
+#                     R32  R16  QF   SF  Final Champ
+STAGE_POINTS_BY_POT = {
+    1: [ 8, 14, 24, 38, 58,  88],
+    2: [12, 19, 30, 44, 62,  90],
+    3: [18, 26, 38, 52, 68,  94],
+    4: [26, 36, 50, 64, 78, 100],
+}
 
 # Per-match result points, awarded in EVERY round (group stage included),
 # before the pot multiplier. A knockout tie decided on penalties counts as a
@@ -146,15 +162,15 @@ def team_ids_in(match):
 
 def compute_furthest_stages(matches, tracked_ids):
     """
-    Return {team_id: (rank, label, base_points)} for the furthest stage each
-    tracked team reached. A team is credited with a stage if it appears in a
-    fixture at that stage. The FINAL winner is upgraded to CHAMPION.
+    Return {team_id: (rank, label)} for the furthest stage each tracked team
+    reached. A team is credited with a stage if it appears in a fixture at that
+    stage. The FINAL winner is upgraded to Champion. Stage POINTS are looked up
+    later per pot (see STAGE_POINTS_BY_POT).
     """
-    best = {}  # team_id -> (rank, label, points)
+    best = {}  # team_id -> (rank, label)
 
     for m in matches:
-        stage = m.get("stage")
-        info = STAGE_TABLE.get(stage)
+        info = STAGE_TABLE.get(m.get("stage"))
         if info is None:
             continue
         for tid in team_ids_in(m):
@@ -174,7 +190,7 @@ def compute_furthest_stages(matches, tracked_ids):
         elif winner == "AWAY_TEAM":
             winner_id = (m.get("awayTeam") or {}).get("id")
         if winner_id in tracked_ids:
-            best[winner_id] = CHAMPION
+            best[winner_id] = (CHAMPION_RANK, CHAMPION_LABEL)
 
     return best
 
@@ -189,7 +205,6 @@ def main():
 
     pots = load_json(os.path.join(HERE, "pots.json"))
     draft = load_json(os.path.join(HERE, "draft.json"))
-    multipliers = {int(k): v for k, v in pots["multipliers"].items()}
 
     # team_id -> {name, pot}, and a name->id map for draft entries given by name.
     teams_by_id, name_to_id, missing_ids = {}, {}, []
@@ -242,7 +257,7 @@ def main():
                   file=sys.stderr)
             continue
         if stage_name == "CHAMPION":
-            furthest[tid] = CHAMPION
+            furthest[tid] = (CHAMPION_RANK, CHAMPION_LABEL)
         elif stage_name in STAGE_TABLE:
             furthest[tid] = STAGE_TABLE[stage_name]
         else:
@@ -250,7 +265,11 @@ def main():
                   f"a known stage; ignoring.", file=sys.stderr)
 
     # Build per-player breakdowns.
-    # Team points = (match win/draw points + furthest-stage bonus) x pot mult.
+    # Team points = match win/draw points (FLAT, same for every pot)
+    #               + stage points (looked up per pot from STAGE_POINTS_BY_POT).
+    # Match points are flat so routine group wins aren't inflated; the per-pot
+    # stage points reward an underdog for going FAR, with the premium fading
+    # toward the final so no single deep run auto-wins the pool.
     # No floor: a team that hasn't played, or has only lost, scores 0.
     players = {}  # name -> {teams: [...], totalPoints, teamsAdvancedCount}
     for tid, player in team_to_player.items():
@@ -258,21 +277,23 @@ def main():
         if meta is None:
             continue  # team drafted but id missing from pots.json
         pot = meta["pot"]
-        mult = multipliers.get(pot, 1)
-        rank, label, bonus = furthest.get(tid, STAGE_TABLE["GROUP_STAGE"])
+        stage = furthest.get(tid, STAGE_TABLE["GROUP_STAGE"])
+        rank, label = stage[0], stage[1]
+        # Stage points: 0 in the group stage, else the per-pot value for the
+        # furthest knockout round reached (rank 1..6 -> index 0..5).
+        stage_pts = STAGE_POINTS_BY_POT[pot][rank - 1] if rank >= 1 else 0
         rec = results.get(tid, {"win": 0, "draw": 0, "loss": 0, "matchPoints": 0.0})
         match_pts = rec["matchPoints"]
-        base = round(match_pts + bonus, 2)       # pre-multiplier subtotal
-        pts = round(base * mult, 2)
+        pts = round(match_pts + stage_pts, 2)
         entry = players.setdefault(
             player, {"name": player, "teams": [], "totalPoints": 0.0,
                      "teamsAdvancedCount": 0})
         entry["teams"].append({
-            "name": meta["name"], "pot": pot, "multiplier": mult,
+            "name": meta["name"], "pot": pot,
             "furthestStage": label, "stageRank": rank,
             "wins": rec["win"], "draws": rec["draw"], "losses": rec["loss"],
-            "matchPoints": round(match_pts, 2), "stageBonus": bonus,
-            "basePoints": base, "points": pts,
+            "matchPoints": round(match_pts, 2), "stagePoints": stage_pts,
+            "points": pts,
         })
         entry["totalPoints"] = round(entry["totalPoints"] + pts, 2)
         if rank > 0:  # advanced past the group stage
@@ -321,10 +342,13 @@ def main():
         "upcomingMatches": upcoming[:32],
         "scoringLegend": {
             "matchPoints": {"Win": WIN_POINTS, "Draw": DRAW_POINTS, "Loss": 0},
-            "stageBonus": {"Round of 32": 8, "Round of 16": 12,
-                           "Quarterfinal": 20, "Semifinal": 28,
-                           "Final": 40, "Champion": 56},
-            "potMultipliers": {"1": 1, "2": 1.5, "3": 2, "4": 3},
+            "stagePointsByPot": {str(pot): vals
+                                 for pot, vals in STAGE_POINTS_BY_POT.items()},
+            "stageOrder": ["Round of 32", "Round of 16", "Quarterfinal",
+                           "Semifinal", "Final", "Champion"],
+            "note": "Match win/draw points are flat for every team. Stage points "
+                    "depend on the team's pot — weaker pots earn more for the "
+                    "same round, with the premium fading toward the final.",
         },
         "warnings": ([f"{len(missing_ids)} team(s) missing IDs in pots.json"]
                      if missing_ids else []),
