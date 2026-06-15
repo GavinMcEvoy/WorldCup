@@ -56,10 +56,10 @@ CHAMPION_LABEL = "Champion"
 # Pot-4 finalist still sits below a Pot-1 champion (no instant win).
 #                     R32  R16  QF   SF  Final Champ
 STAGE_POINTS_BY_POT = {
-    1: [ 8, 12, 19, 30, 52, 86],
-    2: [13, 18, 26, 37, 53, 82],
-    3: [19, 26, 36, 48, 62, 86],
-    4: [28, 37, 49, 60, 74, 92],
+    1: [ 6, 11, 19, 29, 44, 62],
+    2: [ 9, 15, 23, 33, 49, 67],
+    3: [14, 22, 31, 42, 56, 74],
+    4: [22, 33, 44, 55, 64, 84],
 }
 
 # Per-match result points, awarded in EVERY round (group stage included),

@@ -28,23 +28,25 @@ same round, with the premium fading toward the final.
 
 | Furthest round | Pot 1 | Pot 2 | Pot 3 | Pot 4 |
 |----------------|:-----:|:-----:|:-----:|:-----:|
-| Round of 32    | 8     | 13    | 19    | 28    |
-| Round of 16    | 12    | 18    | 26    | 37    |
-| Quarterfinal   | 19    | 26    | 36    | 49    |
-| Semifinal      | 30    | 37    | 48    | 60    |
-| Final          | 52    | 53    | 62    | 74    |
-| Champion       | 86    | 82    | 86    | 92    |
+| Round of 32    | 6     | 9     | 14    | 22    |
+| Round of 16    | 11    | 15    | 22    | 33    |
+| Quarterfinal   | 19    | 23    | 31    | 44    |
+| Semifinal      | 29    | 33    | 42    | 55    |
+| Final          | 44    | 49    | 56    | 64    |
+| Champion       | 62    | 67    | 74    | 84    |
 
 **Team points = match points + stage points.** A team scores nothing until it
-actually plays. Match points (win 2 / draw 1) are flat for everyone, so routine
-group wins aren't inflated; the per-pot stage points reward an underdog for going
-*far*, but the premium fades toward the final so no single deep run auto-wins the
-pool. A player's score is the sum of their ~6 teams. Most points wins.
+actually plays. Match points (win 2 / draw 1) are flat for everyone. The per-pot
+stage points are set by **how surprising the result is**: a Pot-4 reaching the
+final (1-in-664) is worth about the same as a Pot-1 winning the title (1-in-14) —
+because the underdog run is the far crazier outcome. A player's score is the sum
+of their ~6 teams. Most points wins.
 
-This curve was tuned by Monte-Carlo over the actual draft so that (a) strong
-teams are the top scorers, (b) taking weak teams is rewarded when they advance,
-(c) no single underdog result is an instant win, and (d) the favorites' edge is
-kept modest — pre-tournament win odds run ~20% (top) down to ~10% (bottom).
+This curve was tuned by Monte-Carlo over the actual draft so that (a) results are
+rewarded in proportion to their rarity, (b) a Pot-4 finalist ≈ a Pot-1 champion,
+(c) no single result is an instant win (a Pot-1 title run still edges a Pot-4
+final run on total points), and (d) the field is close — pre-tournament win odds
+run ~20% (top) down to ~10% (bottom), a ~2.1× spread.
 
 ## One-time setup
 
