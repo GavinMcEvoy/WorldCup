@@ -62,11 +62,12 @@ STAGE_POINTS_BY_POT = {
     4: [28, 40, 50, 59, 67, 87],
 }
 
-# Per-match result points, awarded in EVERY round (group stage included),
-# before the pot multiplier. A knockout tie decided on penalties counts as a
-# WIN for whoever advanced (nobody draws their way out of a knockout).
-WIN_POINTS = 2
-DRAW_POINTS = 1
+# Per-match result points, awarded in EVERY round (group stage included), flat
+# for every pot. Kept light so match results add a little day-to-day movement
+# without overshadowing the stage-advancement points. A knockout tie decided on
+# penalties counts as a WIN for whoever advanced (nobody draws out of a knockout).
+WIN_POINTS = 1
+DRAW_POINTS = 0.5
 LOSS_POINTS = 0
 
 # Stages we treat as "appeared => advanced". A team listed in a LAST_16 fixture

@@ -18,8 +18,8 @@ Each team scores points for the **furthest stage it reaches**, times its **pot m
 
 | Result | Points |
 |--------|:------:|
-| Win    | 2      |
-| Draw   | 1      |
+| Win    | 1      |
+| Draw   | 0.5    |
 | Loss   | 0      |
 
 **Stage points** — for the single furthest round a team reaches (does *not* stack
@@ -36,7 +36,7 @@ same round, with the premium fading toward the final.
 | Champion       | 62    | 66    | 77    | 87    |
 
 **Team points = match points + stage points.** A team scores nothing until it
-actually plays. Match points (win 2 / draw 1) are flat for everyone. The per-pot
+actually plays. Match points (win 1 / draw 0.5) are flat for everyone. The per-pot
 stage points are set by **how surprising the result is**: a Pot-4 reaching the
 final (1-in-664) is worth about the same as a Pot-1 winning the title (1-in-14) —
 because the underdog run is the far crazier outcome. A player's score is the sum
