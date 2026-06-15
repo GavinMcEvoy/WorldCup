@@ -22,35 +22,29 @@ Each team scores points for the **furthest stage it reaches**, times its **pot m
 | Draw   | 1      |
 | Loss   | 0      |
 
-**Stage points** — for the single furthest round a team reaches (does *not* stack per round):
+**Stage points** — for the single furthest round a team reaches (does *not* stack
+per round). The value depends on the team's pot: a weaker pot earns more for the
+same round, with the premium fading toward the final.
 
-| Furthest round | Stage pts |
-|----------------|:---------:|
-| Round of 32    | 8         |
-| Round of 16    | 14        |
-| Quarterfinal   | 24        |
-| Semifinal      | 38        |
-| Final          | 58        |
-| Champion       | 88        |
+| Furthest round | Pot 1 | Pot 2 | Pot 3 | Pot 4 |
+|----------------|:-----:|:-----:|:-----:|:-----:|
+| Round of 32    | 8     | 13    | 19    | 28    |
+| Round of 16    | 12    | 18    | 26    | 37    |
+| Quarterfinal   | 19    | 26    | 36    | 49    |
+| Semifinal      | 30    | 37    | 48    | 60    |
+| Final          | 52    | 53    | 62    | 74    |
+| Champion       | 86    | 82    | 86    | 92    |
 
-The **pot multiplier applies to stage points only** (not match points):
-
-| Pot | Stage × |
-|-----|:-------:|
-| 1   | ×1     |
-| 2   | ×1.35  |
-| 3   | ×1.8   |
-| 4   | ×2.4   |
-
-**Team points = match points + (stage points × pot multiplier).** A team scores
-nothing until it actually plays. Match points are flat for everyone, so routine
-group wins aren't inflated; the multiplier rewards an underdog only for going
-*far*, and the ×2.4 cap stops any single deep run from auto-winning the pool.
-A player's score is the sum of their ~6 teams. Most points wins.
+**Team points = match points + stage points.** A team scores nothing until it
+actually plays. Match points (win 2 / draw 1) are flat for everyone, so routine
+group wins aren't inflated; the per-pot stage points reward an underdog for going
+*far*, but the premium fades toward the final so no single deep run auto-wins the
+pool. A player's score is the sum of their ~6 teams. Most points wins.
 
 This curve was tuned by Monte-Carlo over the actual draft so that (a) strong
-teams are the top scorers in expectation, (b) taking weak teams is rewarded when
-they advance, and (c) no single underdog result is an instant win.
+teams are the top scorers, (b) taking weak teams is rewarded when they advance,
+(c) no single underdog result is an instant win, and (d) the favorites' edge is
+kept modest — pre-tournament win odds run ~20% (top) down to ~10% (bottom).
 
 ## One-time setup
 
