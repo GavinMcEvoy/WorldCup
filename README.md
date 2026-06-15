@@ -28,12 +28,12 @@ same round, with the premium fading toward the final.
 
 | Furthest round | Pot 1 | Pot 2 | Pot 3 | Pot 4 |
 |----------------|:-----:|:-----:|:-----:|:-----:|
-| Round of 32    | 5     | 9     | 16    | 26    |
-| Round of 16    | 9     | 15    | 25    | 38    |
-| Quarterfinal   | 16    | 23    | 34    | 48    |
-| Semifinal      | 26    | 33    | 45    | 58    |
-| Final          | 42    | 49    | 58    | 66    |
-| Champion       | 62    | 67    | 76    | 86    |
+| Round of 32    | 4     | 8     | 17    | 28    |
+| Round of 16    | 8     | 14    | 26    | 40    |
+| Quarterfinal   | 15    | 22    | 35    | 50    |
+| Semifinal      | 25    | 32    | 46    | 59    |
+| Final          | 41    | 48    | 59    | 67    |
+| Champion       | 62    | 66    | 77    | 87    |
 
 **Team points = match points + stage points.** A team scores nothing until it
 actually plays. Match points (win 2 / draw 1) are flat for everyone. The per-pot
