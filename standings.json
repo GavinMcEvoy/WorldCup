@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T04:14:50.425974Z",
+  "lastUpdated": "2026-06-15T12:13:01.518155Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 12,
@@ -842,6 +842,5 @@
     ],
     "note": "Match win/draw points are flat for every team. Stage points depend on the team's pot — weaker pots earn more for the same round, with the premium fading toward the final."
   },
-  "warnings": [],
-  "note": "Placeholder: recomputed from current results under live scoring; bot will refresh."
+  "warnings": []
 }
