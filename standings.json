@@ -16,9 +16,9 @@
           "wins": 1,
           "draws": 0,
           "losses": 0,
-          "matchPoints": 2.0,
+          "matchPoints": 1.0,
           "stagePoints": 0,
-          "points": 2.0
+          "points": 1.0
         },
         {
           "name": "Brazil",
@@ -28,9 +28,9 @@
           "wins": 0,
           "draws": 1,
           "losses": 0,
-          "matchPoints": 1.0,
+          "matchPoints": 0.5,
           "stagePoints": 0,
-          "points": 1.0
+          "points": 0.5
         },
         {
           "name": "Canada",
@@ -40,9 +40,9 @@
           "wins": 0,
           "draws": 1,
           "losses": 0,
-          "matchPoints": 1.0,
+          "matchPoints": 0.5,
           "stagePoints": 0,
-          "points": 1.0
+          "points": 0.5
         },
         {
           "name": "Ghana",
@@ -81,7 +81,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 4.0,
+      "totalPoints": 2.0,
       "teamsAdvancedCount": 0,
       "rank": 1
     },
@@ -96,9 +96,9 @@
           "wins": 1,
           "draws": 0,
           "losses": 0,
-          "matchPoints": 2.0,
+          "matchPoints": 1.0,
           "stagePoints": 0,
-          "points": 2.0
+          "points": 1.0
         },
         {
           "name": "Switzerland",
@@ -108,9 +108,9 @@
           "wins": 0,
           "draws": 1,
           "losses": 0,
-          "matchPoints": 1.0,
+          "matchPoints": 0.5,
           "stagePoints": 0,
-          "points": 1.0
+          "points": 0.5
         },
         {
           "name": "Netherlands",
@@ -120,9 +120,9 @@
           "wins": 0,
           "draws": 1,
           "losses": 0,
-          "matchPoints": 1.0,
+          "matchPoints": 0.5,
           "stagePoints": 0,
-          "points": 1.0
+          "points": 0.5
         },
         {
           "name": "Czechia",
@@ -161,7 +161,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 4.0,
+      "totalPoints": 2.0,
       "teamsAdvancedCount": 0,
       "rank": 1
     },
@@ -176,9 +176,9 @@
           "wins": 1,
           "draws": 0,
           "losses": 0,
-          "matchPoints": 2.0,
+          "matchPoints": 1.0,
           "stagePoints": 0,
-          "points": 2.0
+          "points": 1.0
         },
         {
           "name": "Bosnia and Herzegovina",
@@ -188,9 +188,9 @@
           "wins": 0,
           "draws": 1,
           "losses": 0,
-          "matchPoints": 1.0,
+          "matchPoints": 0.5,
           "stagePoints": 0,
-          "points": 1.0
+          "points": 0.5
         },
         {
           "name": "Morocco",
@@ -200,9 +200,9 @@
           "wins": 0,
           "draws": 1,
           "losses": 0,
-          "matchPoints": 1.0,
+          "matchPoints": 0.5,
           "stagePoints": 0,
-          "points": 1.0
+          "points": 0.5
         },
         {
           "name": "Haiti",
@@ -241,7 +241,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 4.0,
+      "totalPoints": 2.0,
       "teamsAdvancedCount": 0,
       "rank": 1
     },
@@ -256,9 +256,9 @@
           "wins": 1,
           "draws": 0,
           "losses": 0,
-          "matchPoints": 2.0,
+          "matchPoints": 1.0,
           "stagePoints": 0,
-          "points": 2.0
+          "points": 1.0
         },
         {
           "name": "United States",
@@ -268,9 +268,9 @@
           "wins": 1,
           "draws": 0,
           "losses": 0,
-          "matchPoints": 2.0,
+          "matchPoints": 1.0,
           "stagePoints": 0,
-          "points": 2.0
+          "points": 1.0
         },
         {
           "name": "Paraguay",
@@ -321,7 +321,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 4.0,
+      "totalPoints": 2.0,
       "teamsAdvancedCount": 0,
       "rank": 1
     },
@@ -336,9 +336,9 @@
           "wins": 1,
           "draws": 0,
           "losses": 0,
-          "matchPoints": 2.0,
+          "matchPoints": 1.0,
           "stagePoints": 0,
-          "points": 2.0
+          "points": 1.0
         },
         {
           "name": "Qatar",
@@ -348,9 +348,9 @@
           "wins": 0,
           "draws": 1,
           "losses": 0,
-          "matchPoints": 1.0,
+          "matchPoints": 0.5,
           "stagePoints": 0,
-          "points": 1.0
+          "points": 0.5
         },
         {
           "name": "Japan",
@@ -360,9 +360,9 @@
           "wins": 0,
           "draws": 1,
           "losses": 0,
-          "matchPoints": 1.0,
+          "matchPoints": 0.5,
           "stagePoints": 0,
-          "points": 1.0
+          "points": 0.5
         },
         {
           "name": "New Zealand",
@@ -401,7 +401,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 4.0,
+      "totalPoints": 2.0,
       "teamsAdvancedCount": 0,
       "rank": 1
     },
@@ -416,9 +416,9 @@
           "wins": 1,
           "draws": 0,
           "losses": 0,
-          "matchPoints": 2.0,
+          "matchPoints": 1.0,
           "stagePoints": 0,
-          "points": 2.0
+          "points": 1.0
         },
         {
           "name": "Jordan",
@@ -481,7 +481,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 2.0,
+      "totalPoints": 1.0,
       "teamsAdvancedCount": 0,
       "rank": 6
     },
@@ -496,9 +496,9 @@
           "wins": 1,
           "draws": 0,
           "losses": 0,
-          "matchPoints": 2.0,
+          "matchPoints": 1.0,
           "stagePoints": 0,
-          "points": 2.0
+          "points": 1.0
         },
         {
           "name": "DR Congo",
@@ -561,7 +561,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 2.0,
+      "totalPoints": 1.0,
       "teamsAdvancedCount": 0,
       "rank": 6
     }
@@ -794,42 +794,42 @@
   ],
   "scoringLegend": {
     "matchPoints": {
-      "Win": 2,
-      "Draw": 1,
+      "Win": 1,
+      "Draw": 0.5,
       "Loss": 0
     },
     "stagePointsByPot": {
       "1": [
+        4,
         8,
-        12,
-        19,
-        30,
-        52,
-        86
+        15,
+        25,
+        41,
+        62
       ],
       "2": [
-        13,
-        18,
-        26,
-        37,
-        53,
-        82
+        8,
+        14,
+        22,
+        32,
+        48,
+        66
       ],
       "3": [
-        19,
+        17,
         26,
-        36,
-        48,
-        62,
-        86
+        35,
+        46,
+        59,
+        77
       ],
       "4": [
         28,
-        37,
-        49,
-        60,
-        74,
-        92
+        40,
+        50,
+        59,
+        67,
+        87
       ]
     },
     "stageOrder": [
@@ -842,5 +842,6 @@
     ],
     "note": "Match win/draw points are flat for every team. Stage points depend on the team's pot — weaker pots earn more for the same round, with the premium fading toward the final."
   },
-  "warnings": []
+  "warnings": [],
+  "note": "Placeholder: recomputed from current results under live scoring; bot will refresh."
 }
