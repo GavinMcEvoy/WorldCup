@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-06-15T12:13:01.518155Z",
+  "lastUpdated": "2026-06-15T18:25:49.749978Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 12,
+  "finishedMatches": 13,
   "tournamentStarted": true,
   "players": [
     {
@@ -406,6 +406,86 @@
       "rank": 1
     },
     {
+      "name": "Gav",
+      "teams": [
+        {
+          "name": "Sweden",
+          "pot": 4,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "Spain",
+          "pot": 1,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "DR Congo",
+          "pot": 4,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 0.0,
+          "stagePoints": 0,
+          "points": 0.0
+        },
+        {
+          "name": "Turkiye",
+          "pot": 4,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 0.0,
+          "stagePoints": 0,
+          "points": 0.0
+        },
+        {
+          "name": "Egypt",
+          "pot": 3,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 0.0,
+          "stagePoints": 0,
+          "points": 0.0
+        },
+        {
+          "name": "England",
+          "pot": 1,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 0.0,
+          "stagePoints": 0,
+          "points": 0.0
+        }
+      ],
+      "totalPoints": 1.5,
+      "teamsAdvancedCount": 0,
+      "rank": 6
+    },
+    {
       "name": "Andy",
       "teams": [
         {
@@ -483,97 +563,10 @@
       ],
       "totalPoints": 1.0,
       "teamsAdvancedCount": 0,
-      "rank": 6
-    },
-    {
-      "name": "Gav",
-      "teams": [
-        {
-          "name": "Sweden",
-          "pot": 4,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "DR Congo",
-          "pot": 4,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        },
-        {
-          "name": "Turkiye",
-          "pot": 4,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        },
-        {
-          "name": "Egypt",
-          "pot": 3,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        },
-        {
-          "name": "England",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        },
-        {
-          "name": "Spain",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        }
-      ],
-      "totalPoints": 1.0,
-      "teamsAdvancedCount": 0,
-      "rank": 6
+      "rank": 7
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-06-15T16:00:00Z",
-      "stage": "GROUP_STAGE",
-      "status": "TIMED",
-      "homeTeam": "Spain",
-      "awayTeam": "Cape Verde Islands"
-    },
     {
       "utcDate": "2026-06-15T19:00:00Z",
       "stage": "GROUP_STAGE",
@@ -790,6 +783,13 @@
       "status": "TIMED",
       "homeTeam": "Jordan",
       "awayTeam": "Algeria"
+    },
+    {
+      "utcDate": "2026-06-23T17:00:00Z",
+      "stage": "GROUP_STAGE",
+      "status": "TIMED",
+      "homeTeam": "Portugal",
+      "awayTeam": "Uzbekistan"
     }
   ],
   "scoringLegend": {
