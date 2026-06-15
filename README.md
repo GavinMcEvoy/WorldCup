@@ -28,12 +28,12 @@ same round, with the premium fading toward the final.
 
 | Furthest round | Pot 1 | Pot 2 | Pot 3 | Pot 4 |
 |----------------|:-----:|:-----:|:-----:|:-----:|
-| Round of 32    | 6     | 9     | 14    | 22    |
-| Round of 16    | 11    | 15    | 22    | 33    |
-| Quarterfinal   | 19    | 23    | 31    | 44    |
-| Semifinal      | 29    | 33    | 42    | 55    |
-| Final          | 44    | 49    | 56    | 64    |
-| Champion       | 62    | 67    | 74    | 84    |
+| Round of 32    | 5     | 9     | 16    | 26    |
+| Round of 16    | 9     | 15    | 25    | 38    |
+| Quarterfinal   | 16    | 23    | 34    | 48    |
+| Semifinal      | 26    | 33    | 45    | 58    |
+| Final          | 42    | 49    | 58    | 66    |
+| Champion       | 62    | 67    | 76    | 86    |
 
 **Team points = match points + stage points.** A team scores nothing until it
 actually plays. Match points (win 2 / draw 1) are flat for everyone. The per-pot
@@ -46,7 +46,7 @@ This curve was tuned by Monte-Carlo over the actual draft so that (a) results ar
 rewarded in proportion to their rarity, (b) a Pot-4 finalist ≈ a Pot-1 champion,
 (c) no single result is an instant win (a Pot-1 title run still edges a Pot-4
 final run on total points), and (d) the field is close — pre-tournament win odds
-run ~20% (top) down to ~10% (bottom), a ~2.1× spread.
+run ~19% (top) down to ~11% (bottom), a ~1.7× spread.
 
 ## One-time setup
 
