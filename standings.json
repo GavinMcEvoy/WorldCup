@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T16:51:17.322925Z",
+  "lastUpdated": "2026-06-16T20:50:11.110156Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 16,
@@ -570,7 +570,7 @@
     {
       "utcDate": "2026-06-16T19:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "France",
       "awayTeam": "Senegal"
     },
