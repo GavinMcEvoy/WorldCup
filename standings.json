@@ -1,10 +1,90 @@
 {
-  "lastUpdated": "2026-06-16T20:50:11.110156Z",
+  "lastUpdated": "2026-06-16T23:23:44.796756Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 16,
+  "finishedMatches": 17,
   "tournamentStarted": true,
   "players": [
+    {
+      "name": "Eriku",
+      "teams": [
+        {
+          "name": "Scotland",
+          "pot": 3,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "France",
+          "pot": 1,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "Bosnia and Herzegovina",
+          "pot": 4,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "Morocco",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "Haiti",
+          "pot": 4,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 0.0,
+          "stagePoints": 0,
+          "points": 0.0
+        },
+        {
+          "name": "Ecuador",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 0.0,
+          "stagePoints": 0,
+          "points": 0.0
+        }
+      ],
+      "totalPoints": 3.0,
+      "teamsAdvancedCount": 0,
+      "rank": 1
+    },
     {
       "name": "Dev",
       "teams": [
@@ -83,7 +163,7 @@
       ],
       "totalPoints": 2.5,
       "teamsAdvancedCount": 0,
-      "rank": 1
+      "rank": 2
     },
     {
       "name": "Drew",
@@ -163,7 +243,7 @@
       ],
       "totalPoints": 2.5,
       "teamsAdvancedCount": 0,
-      "rank": 1
+      "rank": 2
     },
     {
       "name": "Rea",
@@ -243,87 +323,7 @@
       ],
       "totalPoints": 2.5,
       "teamsAdvancedCount": 0,
-      "rank": 1
-    },
-    {
-      "name": "Eriku",
-      "teams": [
-        {
-          "name": "Scotland",
-          "pot": 3,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "Bosnia and Herzegovina",
-          "pot": 4,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Morocco",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Haiti",
-          "pot": 4,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        },
-        {
-          "name": "Ecuador",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        },
-        {
-          "name": "France",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        }
-      ],
-      "totalPoints": 2.0,
-      "teamsAdvancedCount": 0,
-      "rank": 4
+      "rank": 2
     },
     {
       "name": "Gav",
@@ -403,7 +403,7 @@
       ],
       "totalPoints": 2.0,
       "teamsAdvancedCount": 0,
-      "rank": 4
+      "rank": 5
     },
     {
       "name": "Rain",
@@ -463,7 +463,7 @@
           "stageRank": 0,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "matchPoints": 0.0,
           "stagePoints": 0,
           "points": 0.0
@@ -483,7 +483,7 @@
       ],
       "totalPoints": 2.0,
       "teamsAdvancedCount": 0,
-      "rank": 4
+      "rank": 5
     },
     {
       "name": "Andy",
@@ -568,16 +568,9 @@
   ],
   "upcomingMatches": [
     {
-      "utcDate": "2026-06-16T19:00:00Z",
-      "stage": "GROUP_STAGE",
-      "status": "IN_PLAY",
-      "homeTeam": "France",
-      "awayTeam": "Senegal"
-    },
-    {
       "utcDate": "2026-06-16T22:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Iraq",
       "awayTeam": "Norway"
     },
@@ -790,6 +783,13 @@
       "status": "TIMED",
       "homeTeam": "Colombia",
       "awayTeam": "Congo DR"
+    },
+    {
+      "utcDate": "2026-06-24T19:00:00Z",
+      "stage": "GROUP_STAGE",
+      "status": "TIMED",
+      "homeTeam": "Switzerland",
+      "awayTeam": "Canada"
     }
   ],
   "scoringLegend": {
