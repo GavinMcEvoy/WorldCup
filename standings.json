@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-06-17T22:04:10.383254Z",
+  "lastUpdated": "2026-06-18T03:56:19.384923Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 21,
+  "finishedMatches": 22,
   "tournamentStarted": true,
   "players": [
     {
@@ -86,6 +86,86 @@
       "rank": 1
     },
     {
+      "name": "Gav",
+      "teams": [
+        {
+          "name": "Sweden",
+          "pot": 4,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "England",
+          "pot": 1,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "DR Congo",
+          "pot": 4,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "Egypt",
+          "pot": 3,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "Spain",
+          "pot": 1,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "Turkiye",
+          "pot": 4,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 0.0,
+          "stagePoints": 0,
+          "points": 0.0
+        }
+      ],
+      "totalPoints": 3.5,
+      "teamsAdvancedCount": 0,
+      "rank": 2
+    },
+    {
       "name": "Andy",
       "teams": [
         {
@@ -163,7 +243,7 @@
       ],
       "totalPoints": 3.0,
       "teamsAdvancedCount": 0,
-      "rank": 2
+      "rank": 3
     },
     {
       "name": "Eriku",
@@ -243,7 +323,7 @@
       ],
       "totalPoints": 3.0,
       "teamsAdvancedCount": 0,
-      "rank": 2
+      "rank": 3
     },
     {
       "name": "Dev",
@@ -323,7 +403,7 @@
       ],
       "totalPoints": 2.5,
       "teamsAdvancedCount": 0,
-      "rank": 4
+      "rank": 5
     },
     {
       "name": "Drew",
@@ -403,87 +483,7 @@
       ],
       "totalPoints": 2.5,
       "teamsAdvancedCount": 0,
-      "rank": 4
-    },
-    {
-      "name": "Gav",
-      "teams": [
-        {
-          "name": "Sweden",
-          "pot": 4,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "DR Congo",
-          "pot": 4,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Egypt",
-          "pot": 3,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Spain",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Turkiye",
-          "pot": 4,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        },
-        {
-          "name": "England",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        }
-      ],
-      "totalPoints": 2.5,
-      "teamsAdvancedCount": 0,
-      "rank": 4
+      "rank": 5
     },
     {
       "name": "Rea",
@@ -555,7 +555,7 @@
           "stageRank": 0,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "matchPoints": 0.0,
           "stagePoints": 0,
           "points": 0.0
@@ -563,28 +563,21 @@
       ],
       "totalPoints": 2.5,
       "teamsAdvancedCount": 0,
-      "rank": 4
+      "rank": 5
     }
   ],
   "upcomingMatches": [
     {
-      "utcDate": "2026-06-17T20:00:00Z",
-      "stage": "GROUP_STAGE",
-      "status": "IN_PLAY",
-      "homeTeam": "England",
-      "awayTeam": "Croatia"
-    },
-    {
       "utcDate": "2026-06-17T23:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Ghana",
       "awayTeam": "Panama"
     },
     {
       "utcDate": "2026-06-18T02:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Uzbekistan",
       "awayTeam": "Colombia"
     },
@@ -790,6 +783,13 @@
       "status": "TIMED",
       "homeTeam": "Czechia",
       "awayTeam": "Mexico"
+    },
+    {
+      "utcDate": "2026-06-25T01:00:00Z",
+      "stage": "GROUP_STAGE",
+      "status": "TIMED",
+      "homeTeam": "South Africa",
+      "awayTeam": "South Korea"
     }
   ],
   "scoringLegend": {
