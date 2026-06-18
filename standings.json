@@ -1,10 +1,90 @@
 {
-  "lastUpdated": "2026-06-18T20:25:38.425346Z",
+  "lastUpdated": "2026-06-18T23:44:47.397325Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 25,
+  "finishedMatches": 26,
   "tournamentStarted": true,
   "players": [
+    {
+      "name": "Drew",
+      "teams": [
+        {
+          "name": "Switzerland",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 1.5,
+          "stagePoints": 0,
+          "points": 1.5
+        },
+        {
+          "name": "Ivory Coast",
+          "pot": 3,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "Czechia",
+          "pot": 4,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 1,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "Uruguay",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "Netherlands",
+          "pot": 1,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "Uzbekistan",
+          "pot": 3,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 0.0,
+          "stagePoints": 0,
+          "points": 0.0
+        }
+      ],
+      "totalPoints": 4.0,
+      "teamsAdvancedCount": 0,
+      "rank": 1
+    },
     {
       "name": "Rain",
       "teams": [
@@ -163,7 +243,7 @@
       ],
       "totalPoints": 3.5,
       "teamsAdvancedCount": 0,
-      "rank": 2
+      "rank": 3
     },
     {
       "name": "Gav",
@@ -243,7 +323,7 @@
       ],
       "totalPoints": 3.5,
       "teamsAdvancedCount": 0,
-      "rank": 2
+      "rank": 3
     },
     {
       "name": "Rea",
@@ -323,7 +403,7 @@
       ],
       "totalPoints": 3.5,
       "teamsAdvancedCount": 0,
-      "rank": 2
+      "rank": 3
     },
     {
       "name": "Andy",
@@ -403,87 +483,7 @@
       ],
       "totalPoints": 3.0,
       "teamsAdvancedCount": 0,
-      "rank": 5
-    },
-    {
-      "name": "Drew",
-      "teams": [
-        {
-          "name": "Ivory Coast",
-          "pot": 3,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "Czechia",
-          "pot": 4,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 1,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Switzerland",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Uruguay",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Netherlands",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Uzbekistan",
-          "pot": 3,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        }
-      ],
-      "totalPoints": 3.0,
-      "teamsAdvancedCount": 0,
-      "rank": 5
+      "rank": 6
     },
     {
       "name": "Eriku",
@@ -519,7 +519,7 @@
           "stageRank": 0,
           "wins": 0,
           "draws": 1,
-          "losses": 0,
+          "losses": 1,
           "matchPoints": 0.5,
           "stagePoints": 0,
           "points": 0.5
@@ -563,21 +563,14 @@
       ],
       "totalPoints": 3.0,
       "teamsAdvancedCount": 0,
-      "rank": 5
+      "rank": 6
     }
   ],
   "upcomingMatches": [
     {
-      "utcDate": "2026-06-18T19:00:00Z",
-      "stage": "GROUP_STAGE",
-      "status": "IN_PLAY",
-      "homeTeam": "Switzerland",
-      "awayTeam": "Bosnia-Herzegovina"
-    },
-    {
       "utcDate": "2026-06-18T22:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Canada",
       "awayTeam": "Qatar"
     },
@@ -790,6 +783,13 @@
       "status": "TIMED",
       "homeTeam": "Tunisia",
       "awayTeam": "Netherlands"
+    },
+    {
+      "utcDate": "2026-06-25T23:00:00Z",
+      "stage": "GROUP_STAGE",
+      "status": "TIMED",
+      "homeTeam": "Japan",
+      "awayTeam": "Sweden"
     }
   ],
   "scoringLegend": {
