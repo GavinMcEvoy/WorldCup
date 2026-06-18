@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-06-18T08:49:23.445346Z",
+  "lastUpdated": "2026-06-18T12:52:25.552928Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 23,
+  "finishedMatches": 24,
   "tournamentStarted": true,
   "players": [
     {
@@ -84,6 +84,86 @@
       "totalPoints": 4.0,
       "teamsAdvancedCount": 0,
       "rank": 1
+    },
+    {
+      "name": "Dev",
+      "teams": [
+        {
+          "name": "Ghana",
+          "pot": 4,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "Mexico",
+          "pot": 1,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "Saudi Arabia",
+          "pot": 3,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "Brazil",
+          "pot": 1,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "Canada",
+          "pot": 1,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "Algeria",
+          "pot": 3,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 0.0,
+          "stagePoints": 0,
+          "points": 0.0
+        }
+      ],
+      "totalPoints": 3.5,
+      "teamsAdvancedCount": 0,
+      "rank": 2
     },
     {
       "name": "Gav",
@@ -315,7 +395,7 @@
           "stageRank": 0,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "matchPoints": 0.0,
           "stagePoints": 0,
           "points": 0.0
@@ -323,7 +403,7 @@
       ],
       "totalPoints": 3.0,
       "teamsAdvancedCount": 0,
-      "rank": 4
+      "rank": 5
     },
     {
       "name": "Eriku",
@@ -403,87 +483,7 @@
       ],
       "totalPoints": 3.0,
       "teamsAdvancedCount": 0,
-      "rank": 4
-    },
-    {
-      "name": "Dev",
-      "teams": [
-        {
-          "name": "Mexico",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "Saudi Arabia",
-          "pot": 3,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Brazil",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Canada",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Ghana",
-          "pot": 4,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        },
-        {
-          "name": "Algeria",
-          "pot": 3,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        }
-      ],
-      "totalPoints": 2.5,
-      "teamsAdvancedCount": 0,
-      "rank": 6
+      "rank": 5
     },
     {
       "name": "Drew",
@@ -563,17 +563,10 @@
       ],
       "totalPoints": 2.5,
       "teamsAdvancedCount": 0,
-      "rank": 6
+      "rank": 7
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-06-17T23:00:00Z",
-      "stage": "GROUP_STAGE",
-      "status": "IN_PLAY",
-      "homeTeam": "Ghana",
-      "awayTeam": "Panama"
-    },
     {
       "utcDate": "2026-06-18T16:00:00Z",
       "stage": "GROUP_STAGE",
@@ -790,6 +783,13 @@
       "status": "TIMED",
       "homeTeam": "Ecuador",
       "awayTeam": "Germany"
+    },
+    {
+      "utcDate": "2026-06-25T20:00:00Z",
+      "stage": "GROUP_STAGE",
+      "status": "TIMED",
+      "homeTeam": "Curaçao",
+      "awayTeam": "Ivory Coast"
     }
   ],
   "scoringLegend": {
