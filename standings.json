@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T12:52:25.552928Z",
+  "lastUpdated": "2026-06-18T16:56:33.302062Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 24,
@@ -86,10 +86,10 @@
       "rank": 1
     },
     {
-      "name": "Dev",
+      "name": "Eriku",
       "teams": [
         {
-          "name": "Ghana",
+          "name": "Bosnia and Herzegovina",
           "pot": 4,
           "furthestStage": "Group Stage",
           "stageRank": 0,
@@ -101,7 +101,19 @@
           "points": 1.0
         },
         {
-          "name": "Mexico",
+          "name": "Scotland",
+          "pot": 3,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "France",
           "pot": 1,
           "furthestStage": "Group Stage",
           "stageRank": 0,
@@ -113,8 +125,8 @@
           "points": 1.0
         },
         {
-          "name": "Saudi Arabia",
-          "pot": 3,
+          "name": "Morocco",
+          "pot": 2,
           "furthestStage": "Group Stage",
           "stageRank": 0,
           "wins": 0,
@@ -125,32 +137,20 @@
           "points": 0.5
         },
         {
-          "name": "Brazil",
-          "pot": 1,
+          "name": "Haiti",
+          "pot": 4,
           "furthestStage": "Group Stage",
           "stageRank": 0,
           "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 0.5,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 0.0,
           "stagePoints": 0,
-          "points": 0.5
+          "points": 0.0
         },
         {
-          "name": "Canada",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Algeria",
-          "pot": 3,
+          "name": "Ecuador",
+          "pot": 2,
           "furthestStage": "Group Stage",
           "stageRank": 0,
           "wins": 0,
@@ -406,11 +406,11 @@
       "rank": 5
     },
     {
-      "name": "Eriku",
+      "name": "Dev",
       "teams": [
         {
-          "name": "Scotland",
-          "pot": 3,
+          "name": "Ghana",
+          "pot": 4,
           "furthestStage": "Group Stage",
           "stageRank": 0,
           "wins": 1,
@@ -421,7 +421,7 @@
           "points": 1.0
         },
         {
-          "name": "France",
+          "name": "Mexico",
           "pot": 1,
           "furthestStage": "Group Stage",
           "stageRank": 0,
@@ -433,8 +433,8 @@
           "points": 1.0
         },
         {
-          "name": "Bosnia and Herzegovina",
-          "pot": 4,
+          "name": "Saudi Arabia",
+          "pot": 3,
           "furthestStage": "Group Stage",
           "stageRank": 0,
           "wins": 0,
@@ -445,8 +445,8 @@
           "points": 0.5
         },
         {
-          "name": "Morocco",
-          "pot": 2,
+          "name": "Brazil",
+          "pot": 1,
           "furthestStage": "Group Stage",
           "stageRank": 0,
           "wins": 0,
@@ -457,8 +457,8 @@
           "points": 0.5
         },
         {
-          "name": "Haiti",
-          "pot": 4,
+          "name": "Algeria",
+          "pot": 3,
           "furthestStage": "Group Stage",
           "stageRank": 0,
           "wins": 0,
@@ -469,8 +469,8 @@
           "points": 0.0
         },
         {
-          "name": "Ecuador",
-          "pot": 2,
+          "name": "Canada",
+          "pot": 1,
           "furthestStage": "Group Stage",
           "stageRank": 0,
           "wins": 0,
@@ -570,7 +570,7 @@
     {
       "utcDate": "2026-06-18T16:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "PAUSED",
       "homeTeam": "Czechia",
       "awayTeam": "South Africa"
     },
