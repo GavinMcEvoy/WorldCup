@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-06-19T19:55:41.860904Z",
+  "lastUpdated": "2026-06-19T21:11:11.296933Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 28,
+  "finishedMatches": 29,
   "tournamentStarted": true,
   "players": [
     {
@@ -86,6 +86,86 @@
       "rank": 1
     },
     {
+      "name": "Rain",
+      "teams": [
+        {
+          "name": "United States",
+          "pot": 1,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 2.0,
+          "stagePoints": 0,
+          "points": 2.0
+        },
+        {
+          "name": "Australia",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "Austria",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "Argentina",
+          "pot": 1,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "Paraguay",
+          "pot": 3,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 0.0,
+          "stagePoints": 0,
+          "points": 0.0
+        },
+        {
+          "name": "Senegal",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 0.0,
+          "stagePoints": 0,
+          "points": 0.0
+        }
+      ],
+      "totalPoints": 5.0,
+      "teamsAdvancedCount": 0,
+      "rank": 2
+    },
+    {
       "name": "Drew",
       "teams": [
         {
@@ -163,87 +243,7 @@
       ],
       "totalPoints": 4.0,
       "teamsAdvancedCount": 0,
-      "rank": 2
-    },
-    {
-      "name": "Rain",
-      "teams": [
-        {
-          "name": "Australia",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "Austria",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "Argentina",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "United States",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "Paraguay",
-          "pot": 3,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        },
-        {
-          "name": "Senegal",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        }
-      ],
-      "totalPoints": 4.0,
-      "teamsAdvancedCount": 0,
-      "rank": 2
+      "rank": 3
     },
     {
       "name": "Gav",
@@ -568,13 +568,6 @@
   ],
   "upcomingMatches": [
     {
-      "utcDate": "2026-06-19T19:00:00Z",
-      "stage": "GROUP_STAGE",
-      "status": "IN_PLAY",
-      "homeTeam": "United States",
-      "awayTeam": "Australia"
-    },
-    {
       "utcDate": "2026-06-19T22:00:00Z",
       "stage": "GROUP_STAGE",
       "status": "TIMED",
@@ -790,6 +783,13 @@
       "status": "TIMED",
       "homeTeam": "Paraguay",
       "awayTeam": "Australia"
+    },
+    {
+      "utcDate": "2026-06-26T19:00:00Z",
+      "stage": "GROUP_STAGE",
+      "status": "TIMED",
+      "homeTeam": "Norway",
+      "awayTeam": "France"
     }
   ],
   "scoringLegend": {
