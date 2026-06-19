@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T21:11:11.296933Z",
+  "lastUpdated": "2026-06-19T22:57:11.852369Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 29,
@@ -570,7 +570,7 @@
     {
       "utcDate": "2026-06-19T22:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Scotland",
       "awayTeam": "Morocco"
     },
