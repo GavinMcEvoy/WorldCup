@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T14:02:20.175102Z",
+  "lastUpdated": "2026-06-20T17:26:11.154643Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 32,
@@ -570,7 +570,7 @@
     {
       "utcDate": "2026-06-20T17:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Netherlands",
       "awayTeam": "Sweden"
     },
