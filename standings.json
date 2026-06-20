@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-06-20T03:37:50.396836Z",
+  "lastUpdated": "2026-06-20T07:50:14.839826Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 31,
+  "finishedMatches": 32,
   "tournamentStarted": true,
   "players": [
     {
@@ -101,6 +101,18 @@
           "points": 2.0
         },
         {
+          "name": "Paraguay",
+          "pot": 3,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
           "name": "Australia",
           "pot": 2,
           "furthestStage": "Group Stage",
@@ -137,18 +149,6 @@
           "points": 1.0
         },
         {
-          "name": "Paraguay",
-          "pot": 3,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        },
-        {
           "name": "Senegal",
           "pot": 2,
           "furthestStage": "Group Stage",
@@ -161,7 +161,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 5.0,
+      "totalPoints": 6.0,
       "teamsAdvancedCount": 0,
       "rank": 2
     },
@@ -395,7 +395,7 @@
           "stageRank": 0,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "matchPoints": 0.0,
           "stagePoints": 0,
           "points": 0.0
@@ -567,13 +567,6 @@
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-06-20T03:00:00Z",
-      "stage": "GROUP_STAGE",
-      "status": "IN_PLAY",
-      "homeTeam": "Turkey",
-      "awayTeam": "Paraguay"
-    },
     {
       "utcDate": "2026-06-20T17:00:00Z",
       "stage": "GROUP_STAGE",
@@ -790,6 +783,13 @@
       "status": "TIMED",
       "homeTeam": "Uruguay",
       "awayTeam": "Spain"
+    },
+    {
+      "utcDate": "2026-06-27T00:00:00Z",
+      "stage": "GROUP_STAGE",
+      "status": "TIMED",
+      "homeTeam": "Cape Verde Islands",
+      "awayTeam": "Saudi Arabia"
     }
   ],
   "scoringLegend": {
