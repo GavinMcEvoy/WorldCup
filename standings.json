@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T19:25:35.535127Z",
+  "lastUpdated": "2026-06-20T21:18:10.085815Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 33,
@@ -570,7 +570,7 @@
     {
       "utcDate": "2026-06-20T20:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Germany",
       "awayTeam": "Ivory Coast"
     },
