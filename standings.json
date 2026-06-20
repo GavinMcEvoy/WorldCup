@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-06-20T21:18:10.085815Z",
+  "lastUpdated": "2026-06-20T23:08:11.969852Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 33,
+  "finishedMatches": 34,
   "tournamentStarted": true,
   "players": [
     {
@@ -199,7 +199,7 @@
           "stageRank": 0,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "matchPoints": 1.0,
           "stagePoints": 0,
           "points": 1.0
@@ -244,6 +244,86 @@
       "totalPoints": 5.0,
       "teamsAdvancedCount": 0,
       "rank": 3
+    },
+    {
+      "name": "Rea",
+      "teams": [
+        {
+          "name": "Germany",
+          "pot": 1,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 2.0,
+          "stagePoints": 0,
+          "points": 2.0
+        },
+        {
+          "name": "Colombia",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "New Zealand",
+          "pot": 4,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "Qatar",
+          "pot": 3,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 1,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "Japan",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "Croatia",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 0.0,
+          "stagePoints": 0,
+          "points": 0.0
+        }
+      ],
+      "totalPoints": 4.5,
+      "teamsAdvancedCount": 0,
+      "rank": 4
     },
     {
       "name": "Eriku",
@@ -323,7 +403,7 @@
       ],
       "totalPoints": 4.0,
       "teamsAdvancedCount": 0,
-      "rank": 4
+      "rank": 5
     },
     {
       "name": "Gav",
@@ -403,87 +483,7 @@
       ],
       "totalPoints": 3.5,
       "teamsAdvancedCount": 0,
-      "rank": 5
-    },
-    {
-      "name": "Rea",
-      "teams": [
-        {
-          "name": "Colombia",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "Germany",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "New Zealand",
-          "pot": 4,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Qatar",
-          "pot": 3,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 1,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Japan",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Croatia",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        }
-      ],
-      "totalPoints": 3.5,
-      "teamsAdvancedCount": 0,
-      "rank": 5
+      "rank": 6
     },
     {
       "name": "Andy",
@@ -567,13 +567,6 @@
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-06-20T20:00:00Z",
-      "stage": "GROUP_STAGE",
-      "status": "IN_PLAY",
-      "homeTeam": "Germany",
-      "awayTeam": "Ivory Coast"
-    },
     {
       "utcDate": "2026-06-21T00:00:00Z",
       "stage": "GROUP_STAGE",
@@ -790,6 +783,13 @@
       "status": "TIMED",
       "homeTeam": "New Zealand",
       "awayTeam": "Belgium"
+    },
+    {
+      "utcDate": "2026-06-27T03:00:00Z",
+      "stage": "GROUP_STAGE",
+      "status": "TIMED",
+      "homeTeam": "Egypt",
+      "awayTeam": "Iran"
     }
   ],
   "scoringLegend": {
