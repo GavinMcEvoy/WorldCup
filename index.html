@@ -224,41 +224,133 @@ function render(data){
   if(data.warnings && data.warnings.length)
     b.innerHTML += '<div class="banner err">⚠ '+data.warnings.map(esc).join(" · ")+'</div>';
 
+  // Determine furthest knockout stage each team has already reached by
+  // inspecting upcomingMatches for appearances in knockout-stage fixtures.
+  // Use pots.json to resolve team names to canonical IDs (name normalization)
+  const STAGE_RANKS = {
+    GROUP_STAGE: 0,
+    LAST_32: 1,
+    LAST_16: 2,
+    QUARTER_FINALS: 3,
+    SEMI_FINALS: 4,
+    THIRD_PLACE: 4,
+    FINAL: 5
+  };
+
+  const stagePointsByPot = (data.scoringLegend && data.scoringLegend.stagePointsByPot) || {};
+
+  // Build name -> id map from pots.json (if available), using a relaxed
+  // normalization to tolerate small naming differences from the API.
+  const potsList = (data.pots && data.pots.teams) || [];
+  function normalizeName(s){
+    return String(s||"").toLowerCase()
+      .replace(/\band\b/g,"")            // remove 'and'
+      .replace(/\b(islands|island)\b/g,"") // remove island/islands
+      .replace(/[^a-z0-9]/g,"");            // drop punctuation/space
+  }
+  const normToEntry = {};
+  potsList.forEach(t=>{
+    const n = normalizeName(t.name);
+    normToEntry[n] = { id: t.id, name: t.name, pot: t.pot };
+  });
+
+  function findPotEntryByName(name){
+    const n = normalizeName(name);
+    if(normToEntry[n]) return normToEntry[n];
+    // fallback: try substring matches (pots name contains given name or vice versa)
+    for(const key in normToEntry){
+      if(key.includes(n) || n.includes(key)) return normToEntry[key];
+    }
+    return null;
+  }
+
+  // Map team ID -> bestRank discovered in upcoming fixtures (0..5)
+  const teamBestRankById = {};
+  (data.upcomingMatches || []).forEach(m => {
+    const rank = STAGE_RANKS[m.stage];
+    if (!rank || rank <= 0) return; // ignore group-stage fixtures
+    const homeName = m.homeTeam || "";
+    const awayName = m.awayTeam || "";
+    const hEntry = findPotEntryByName(homeName);
+    const aEntry = findPotEntryByName(awayName);
+    if(hEntry && hEntry.id) teamBestRankById[hEntry.id] = Math.max(teamBestRankById[hEntry.id]||0, rank);
+    if(aEntry && aEntry.id) teamBestRankById[aEntry.id] = Math.max(teamBestRankById[aEntry.id]||0, rank);
+  });
+
   const rows=document.getElementById("rows");
   const players=data.players||[];
   if(!players.length){
     rows.innerHTML='<tr><td colspan="5" style="padding:16px;color:var(--muted)">No players yet — fill in draft.json.</td></tr>';
   } else {
     rows.innerHTML="";
+    const awarded = new Set();
+
     players.forEach((p,i)=>{
-      const leader = p.rank===1 && p.totalPoints>0;
+      // Recompute totals from teams, awarding stage points where the server
+      // hasn't already given them but the team clearly appears in a
+      // knockout fixture (so has advanced).
+      let derivedTotal = 0;
+      let advCount = 0;
+
+      const teamRows = (p.teams||[]).map(t => {
+        const teamName = t.name || "";
+        const pot = t.pot || 1;
+        const serverStagePts = t.stagePoints || 0;
+        const matchPts = t.matchPoints || 0;
+
+        // Resolve this team's id via pots.json so we can compare against
+        // the upcoming-match IDs we discovered above. Falls back to name
+        // if no mapping exists.
+        const potEntry = findPotEntryByName(teamName);
+        const teamId = potEntry && potEntry.id;
+        const canonicalName = (potEntry && potEntry.name) || teamName;
+
+        // If server has no stage points but our upcomingFixtures show the
+        // team (by id) in a knockout match, award the corresponding stage points
+        // for that pot and the best rank we can detect.
+        let bonusStagePts = 0;
+        const bestRank = teamId ? (teamBestRankById[teamId] || 0) : 0;
+        if (serverStagePts === 0 && bestRank >= 1) {
+          const potArr = stagePointsByPot[String(pot)];
+          if (potArr && typeof potArr[bestRank - 1] !== 'undefined') {
+            bonusStagePts = potArr[bestRank - 1];
+            awarded.add(canonicalName);
+          }
+        }
+
+        const displayStagePts = serverStagePts || bonusStagePts;
+        const displayPoints = (matchPts || 0) + displayStagePts;
+        derivedTotal += displayPoints;
+        if (displayStagePts > 0) advCount++;
+
+        const cls = displayPoints===0 ? "zero" : "";
+        const wdl = (t.wins||0)+"-"+(t.draws||0)+"-"+(t.losses||0);
+        const stageStr = displayStagePts>0 ? (" + "+displayStagePts+" stage") : "";
+        const calc = fmt(matchPts||0)+" match"+stageStr;
+
+        return '<tr><td class="tn">'+esc(canonicalName)+'</td>'+
+          '<td class="ctr"><span class="potpill '+(POT[pot]||"p1")+'">P'+pot+'</span></td>'+
+          '<td class="ctr">'+wdl+'</td>'+
+          '<td>'+esc(t.furthestStage)+'</td>'+
+          '<td class="num">'+calc+'</td>'+
+          '<td class="num tp '+cls+'">'+fmt(displayPoints)+'</td></tr>';
+      }).join("");
+
+      const leader = p.rank===1 && derivedTotal>0;
       const tr=document.createElement("tr");
       tr.className="prow"+(leader?" leader":"")+(open.has(p.name)?" open":"");
       tr.innerHTML=
         '<td class="rk">'+p.rank+'</td>'+
         '<td class="pl">'+esc(p.name)+(leader?' 👑':'')+'</td>'+
-        '<td class="num tot">'+fmt(p.totalPoints)+'</td>'+
-        '<td class="ctr adv">'+(p.teamsAdvancedCount||0)+'</td>'+
+        '<td class="num tot">'+fmt(derivedTotal)+'</td>'+
+        '<td class="ctr adv">'+advCount+'</td>'+
         '<td class="exp"><span class="chev">▶</span></td>';
-
-      const teams=(p.teams||[]).map(t=>{
-        const cls = t.points===0 ? "zero" : "";
-        const wdl = (t.wins||0)+"-"+(t.draws||0)+"-"+(t.losses||0);
-        const stage = t.stagePoints ? " + "+t.stagePoints+" stage" : "";
-        const calc = fmt(t.matchPoints||0)+" match"+stage;
-        return '<tr><td class="tn">'+esc(t.name)+'</td>'+
-          '<td class="ctr"><span class="potpill '+(POT[t.pot]||"p1")+'">P'+t.pot+'</span></td>'+
-          '<td class="ctr">'+wdl+'</td>'+
-          '<td>'+esc(t.furthestStage)+'</td>'+
-          '<td class="num">'+calc+'</td>'+
-          '<td class="num tp '+cls+'">'+fmt(t.points)+'</td></tr>';
-      }).join("");
 
       const dr=document.createElement("tr");
       dr.className="drow";
       dr.innerHTML='<td colspan="5"><div class="inner"><table class="subt">'+
         '<thead><tr><th>Team</th><th class="ctr">Pot</th><th class="ctr">W-D-L</th><th>Furthest</th><th class="num">Calc</th><th class="num">Pts</th></tr></thead>'+
-        '<tbody>'+teams+'</tbody></table></div></td>';
+        '<tbody>'+teamRows+'</tbody></table></div></td>';
 
       tr.addEventListener("click",()=>{
         tr.classList.toggle("open");
@@ -266,6 +358,12 @@ function render(data){
       });
       rows.appendChild(tr); rows.appendChild(dr);
     });
+
+    // Announce any auto-awarded teams discovered.
+    if (awarded.size) {
+      const list = Array.from(awarded).sort();
+      b.innerHTML += '<div class="banner note">Points have been auto‑awarded for teams that appear in knockout fixtures: '+list.map(esc).join(', ')+' (stage points).</div>';
+    }
   }
 
   document.getElementById("rules").hidden=false;
@@ -289,9 +387,15 @@ function showError(msg){
 
 async function load(){
   try{
-    const r=await fetch("standings.json?t="+Date.now(),{cache:"no-store"});
-    if(!r.ok) throw new Error("HTTP "+r.status);
-    render(await r.json());
+    // fetch standings and pots in parallel so client can match by id
+    const sReq = fetch("standings.json?t="+Date.now(),{cache:"no-store"});
+    const pReq = fetch("pots.json?t="+Date.now(),{cache:"no-store"});
+    const [sR, pR] = await Promise.all([sReq, pReq]);
+    if(!sR.ok) throw new Error("HTTP standings "+sR.status);
+    if(!pR.ok) throw new Error("HTTP pots "+pR.status);
+    const standings = await sR.json();
+    standings.pots = await pR.json();
+    render(standings);
   }catch(e){
     if(!document.querySelector(".prow")) showError("Couldn’t load standings ("+e.message+")");
     else document.getElementById("updated").textContent += " · refresh failed";
