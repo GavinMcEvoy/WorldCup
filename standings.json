@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T15:50:50.022008Z",
+  "lastUpdated": "2026-06-21T17:27:13.718831Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 36,
@@ -570,7 +570,7 @@
     {
       "utcDate": "2026-06-21T16:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Spain",
       "awayTeam": "Saudi Arabia"
     },
