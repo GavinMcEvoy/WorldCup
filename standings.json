@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-06-21T19:40:10.282856Z",
+  "lastUpdated": "2026-06-21T21:13:19.125634Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 37,
+  "finishedMatches": 38,
   "tournamentStarted": true,
   "players": [
     {
@@ -518,11 +518,11 @@
           "furthestStage": "Group Stage",
           "stageRank": 0,
           "wins": 0,
-          "draws": 1,
+          "draws": 2,
           "losses": 0,
-          "matchPoints": 0.5,
+          "matchPoints": 1.0,
           "stagePoints": 0,
-          "points": 0.5
+          "points": 1.0
         },
         {
           "name": "Portugal",
@@ -561,19 +561,12 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 3.0,
+      "totalPoints": 3.5,
       "teamsAdvancedCount": 0,
       "rank": 7
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-06-21T19:00:00Z",
-      "stage": "GROUP_STAGE",
-      "status": "IN_PLAY",
-      "homeTeam": "Belgium",
-      "awayTeam": "Iran"
-    },
     {
       "utcDate": "2026-06-21T22:00:00Z",
       "stage": "GROUP_STAGE",
@@ -790,6 +783,13 @@
       "status": "TIMED",
       "homeTeam": "Colombia",
       "awayTeam": "Portugal"
+    },
+    {
+      "utcDate": "2026-06-27T23:30:00Z",
+      "stage": "GROUP_STAGE",
+      "status": "TIMED",
+      "homeTeam": "Congo DR",
+      "awayTeam": "Uzbekistan"
     }
   ],
   "scoringLegend": {
