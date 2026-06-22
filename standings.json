@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T20:47:14.195481Z",
+  "lastUpdated": "2026-06-22T23:19:23.289178Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 41,
@@ -570,7 +570,7 @@
     {
       "utcDate": "2026-06-22T21:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "PAUSED",
       "homeTeam": "France",
       "awayTeam": "Iraq"
     },
