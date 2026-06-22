@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-06-21T23:12:07.006727Z",
+  "lastUpdated": "2026-06-22T04:11:34.762595Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 38,
+  "finishedMatches": 40,
   "tournamentStarted": true,
   "players": [
     {
@@ -166,6 +166,166 @@
       "rank": 2
     },
     {
+      "name": "Drew",
+      "teams": [
+        {
+          "name": "Switzerland",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 1.5,
+          "stagePoints": 0,
+          "points": 1.5
+        },
+        {
+          "name": "Netherlands",
+          "pot": 1,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 1.5,
+          "stagePoints": 0,
+          "points": 1.5
+        },
+        {
+          "name": "Ivory Coast",
+          "pot": 3,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "Uruguay",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 2,
+          "losses": 0,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "Czechia",
+          "pot": 4,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 1,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "Uzbekistan",
+          "pot": 3,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 0.0,
+          "stagePoints": 0,
+          "points": 0.0
+        }
+      ],
+      "totalPoints": 5.5,
+      "teamsAdvancedCount": 0,
+      "rank": 3
+    },
+    {
+      "name": "Gav",
+      "teams": [
+        {
+          "name": "Egypt",
+          "pot": 3,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 1.5,
+          "stagePoints": 0,
+          "points": 1.5
+        },
+        {
+          "name": "Spain",
+          "pot": 1,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 1.5,
+          "stagePoints": 0,
+          "points": 1.5
+        },
+        {
+          "name": "Sweden",
+          "pot": 4,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "England",
+          "pot": 1,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "DR Congo",
+          "pot": 4,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "Turkiye",
+          "pot": 4,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "matchPoints": 0.0,
+          "stagePoints": 0,
+          "points": 0.0
+        }
+      ],
+      "totalPoints": 5.5,
+      "teamsAdvancedCount": 0,
+      "rank": 3
+    },
+    {
       "name": "Rea",
       "teams": [
         {
@@ -211,7 +371,7 @@
           "stageRank": 0,
           "wins": 0,
           "draws": 1,
-          "losses": 0,
+          "losses": 1,
           "matchPoints": 0.5,
           "stagePoints": 0,
           "points": 0.5
@@ -244,86 +404,6 @@
       "totalPoints": 5.5,
       "teamsAdvancedCount": 0,
       "rank": 3
-    },
-    {
-      "name": "Drew",
-      "teams": [
-        {
-          "name": "Switzerland",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 1.5,
-          "stagePoints": 0,
-          "points": 1.5
-        },
-        {
-          "name": "Netherlands",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 1.5,
-          "stagePoints": 0,
-          "points": 1.5
-        },
-        {
-          "name": "Ivory Coast",
-          "pot": 3,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "Czechia",
-          "pot": 4,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 1,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Uruguay",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Uzbekistan",
-          "pot": 3,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        }
-      ],
-      "totalPoints": 5.0,
-      "teamsAdvancedCount": 0,
-      "rank": 4
     },
     {
       "name": "Eriku",
@@ -403,87 +483,7 @@
       ],
       "totalPoints": 4.5,
       "teamsAdvancedCount": 0,
-      "rank": 5
-    },
-    {
-      "name": "Gav",
-      "teams": [
-        {
-          "name": "Spain",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 1.5,
-          "stagePoints": 0,
-          "points": 1.5
-        },
-        {
-          "name": "Sweden",
-          "pot": 4,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "England",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "DR Congo",
-          "pot": 4,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Egypt",
-          "pot": 3,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Turkiye",
-          "pot": 4,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 2,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        }
-      ],
-      "totalPoints": 4.5,
-      "teamsAdvancedCount": 0,
-      "rank": 5
+      "rank": 6
     },
     {
       "name": "Andy",
@@ -567,20 +567,6 @@
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-06-21T22:00:00Z",
-      "stage": "GROUP_STAGE",
-      "status": "PAUSED",
-      "homeTeam": "Uruguay",
-      "awayTeam": "Cape Verde Islands"
-    },
-    {
-      "utcDate": "2026-06-22T01:00:00Z",
-      "stage": "GROUP_STAGE",
-      "status": "TIMED",
-      "homeTeam": "New Zealand",
-      "awayTeam": "Egypt"
-    },
     {
       "utcDate": "2026-06-22T17:00:00Z",
       "stage": "GROUP_STAGE",
@@ -790,6 +776,20 @@
       "status": "TIMED",
       "homeTeam": "Congo DR",
       "awayTeam": "Uzbekistan"
+    },
+    {
+      "utcDate": "2026-06-28T02:00:00Z",
+      "stage": "GROUP_STAGE",
+      "status": "TIMED",
+      "homeTeam": "Jordan",
+      "awayTeam": "Argentina"
+    },
+    {
+      "utcDate": "2026-06-28T02:00:00Z",
+      "stage": "GROUP_STAGE",
+      "status": "TIMED",
+      "homeTeam": "Algeria",
+      "awayTeam": "Austria"
     }
   ],
   "scoringLegend": {
