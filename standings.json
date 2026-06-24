@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T17:53:52.798357Z",
+  "lastUpdated": "2026-06-24T19:45:03.855155Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 48,
@@ -570,14 +570,14 @@
     {
       "utcDate": "2026-06-24T19:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Switzerland",
       "awayTeam": "Canada"
     },
     {
       "utcDate": "2026-06-24T19:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Bosnia-Herzegovina",
       "awayTeam": "Qatar"
     },
