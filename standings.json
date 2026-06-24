@@ -1,24 +1,104 @@
 {
-  "lastUpdated": "2026-06-24T10:49:40.866448Z",
+  "lastUpdated": "2026-06-24T14:29:03.054367Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 48,
   "tournamentStarted": true,
   "players": [
     {
+      "name": "Rain",
+      "teams": [
+        {
+          "name": "Argentina",
+          "pot": 1,
+          "furthestStage": "Round of 32",
+          "stageRank": 1,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 2.0,
+          "stagePoints": 4,
+          "points": 6.0
+        },
+        {
+          "name": "United States",
+          "pot": 1,
+          "furthestStage": "Round of 32",
+          "stageRank": 1,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 2.0,
+          "stagePoints": 4,
+          "points": 6.0
+        },
+        {
+          "name": "Paraguay",
+          "pot": 3,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "Australia",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "Austria",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "Senegal",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "matchPoints": 0.0,
+          "stagePoints": 0,
+          "points": 0.0
+        }
+      ],
+      "totalPoints": 15.0,
+      "teamsAdvancedCount": 2,
+      "rank": 1
+    },
+    {
       "name": "Dev",
       "teams": [
         {
           "name": "Mexico",
           "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
+          "furthestStage": "Round of 32",
+          "stageRank": 1,
           "wins": 2,
           "draws": 0,
           "losses": 0,
           "matchPoints": 2.0,
-          "stagePoints": 0,
-          "points": 2.0
+          "stagePoints": 4,
+          "points": 6.0
         },
         {
           "name": "Ghana",
@@ -81,28 +161,28 @@
           "points": 0.5
         }
       ],
-      "totalPoints": 8.0,
-      "teamsAdvancedCount": 0,
-      "rank": 1
+      "totalPoints": 12.0,
+      "teamsAdvancedCount": 1,
+      "rank": 2
     },
     {
       "name": "Rea",
       "teams": [
         {
-          "name": "Colombia",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
+          "name": "Germany",
+          "pot": 1,
+          "furthestStage": "Round of 32",
+          "stageRank": 1,
           "wins": 2,
           "draws": 0,
           "losses": 0,
           "matchPoints": 2.0,
-          "stagePoints": 0,
-          "points": 2.0
+          "stagePoints": 4,
+          "points": 6.0
         },
         {
-          "name": "Germany",
-          "pot": 1,
+          "name": "Colombia",
+          "pot": 2,
           "furthestStage": "Group Stage",
           "stageRank": 0,
           "wins": 2,
@@ -161,88 +241,8 @@
           "points": 0.5
         }
       ],
-      "totalPoints": 7.5,
-      "teamsAdvancedCount": 0,
-      "rank": 2
-    },
-    {
-      "name": "Rain",
-      "teams": [
-        {
-          "name": "Argentina",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 2,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 2.0,
-          "stagePoints": 0,
-          "points": 2.0
-        },
-        {
-          "name": "United States",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 2,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 2.0,
-          "stagePoints": 0,
-          "points": 2.0
-        },
-        {
-          "name": "Paraguay",
-          "pot": 3,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "Australia",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "Austria",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "Senegal",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 2,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        }
-      ],
-      "totalPoints": 7.0,
-      "teamsAdvancedCount": 0,
+      "totalPoints": 11.5,
+      "teamsAdvancedCount": 1,
       "rank": 3
     },
     {
@@ -753,7 +753,7 @@
       "utcDate": "2026-06-29T20:30:00Z",
       "stage": "LAST_32",
       "status": "TIMED",
-      "homeTeam": "TBD",
+      "homeTeam": "Germany",
       "awayTeam": "TBD"
     },
     {
@@ -781,7 +781,7 @@
       "utcDate": "2026-07-01T01:00:00Z",
       "stage": "LAST_32",
       "status": "TIMED",
-      "homeTeam": "TBD",
+      "homeTeam": "Mexico",
       "awayTeam": "TBD"
     },
     {
