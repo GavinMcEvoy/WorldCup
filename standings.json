@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T21:21:50.317545Z",
+  "lastUpdated": "2026-06-24T23:03:01.443662Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 50,
@@ -570,14 +570,14 @@
     {
       "utcDate": "2026-06-24T22:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "PAUSED",
       "homeTeam": "Morocco",
       "awayTeam": "Haiti"
     },
     {
       "utcDate": "2026-06-24T22:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "PAUSED",
       "homeTeam": "Scotland",
       "awayTeam": "Brazil"
     },
