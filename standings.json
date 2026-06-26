@@ -1,24 +1,104 @@
 {
-  "lastUpdated": "2026-06-26T17:47:19.473877Z",
+  "lastUpdated": "2026-06-26T19:46:47.729827Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 60,
+  "finishedMatches": 54,
   "tournamentStarted": true,
   "players": [
+    {
+      "name": "Rain",
+      "teams": [
+        {
+          "name": "Argentina",
+          "pot": 1,
+          "furthestStage": "Round of 32",
+          "stageRank": 1,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 2.0,
+          "stagePoints": 4,
+          "points": 6.0
+        },
+        {
+          "name": "United States",
+          "pot": 1,
+          "furthestStage": "Round of 32",
+          "stageRank": 1,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 2.0,
+          "stagePoints": 4,
+          "points": 6.0
+        },
+        {
+          "name": "Paraguay",
+          "pot": 3,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 1,
+          "losses": 1,
+          "matchPoints": 1.5,
+          "stagePoints": 0,
+          "points": 1.5
+        },
+        {
+          "name": "Australia",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 1,
+          "losses": 1,
+          "matchPoints": 1.5,
+          "stagePoints": 0,
+          "points": 1.5
+        },
+        {
+          "name": "Austria",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "Senegal",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "matchPoints": 0.0,
+          "stagePoints": 0,
+          "points": 0.0
+        }
+      ],
+      "totalPoints": 16.0,
+      "teamsAdvancedCount": 2,
+      "rank": 1
+    },
     {
       "name": "Dev",
       "teams": [
         {
           "name": "Mexico",
           "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 3,
+          "furthestStage": "Round of 32",
+          "stageRank": 1,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
-          "matchPoints": 3.0,
-          "stagePoints": 0,
-          "points": 3.0
+          "matchPoints": 2.0,
+          "stagePoints": 4,
+          "points": 6.0
         },
         {
           "name": "Brazil",
@@ -81,64 +161,76 @@
           "points": 0.5
         }
       ],
-      "totalPoints": 10.0,
-      "teamsAdvancedCount": 0,
-      "rank": 1
+      "totalPoints": 13.0,
+      "teamsAdvancedCount": 1,
+      "rank": 2
     },
     {
-      "name": "Drew",
+      "name": "Rea",
       "teams": [
         {
-          "name": "Switzerland",
+          "name": "Germany",
+          "pot": 1,
+          "furthestStage": "Round of 32",
+          "stageRank": 1,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 2.0,
+          "stagePoints": 4,
+          "points": 6.0
+        },
+        {
+          "name": "Colombia",
           "pot": 2,
           "furthestStage": "Group Stage",
           "stageRank": 0,
           "wins": 2,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 2.5,
-          "stagePoints": 0,
-          "points": 2.5
-        },
-        {
-          "name": "Netherlands",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 2,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 2.5,
-          "stagePoints": 0,
-          "points": 2.5
-        },
-        {
-          "name": "Ivory Coast",
-          "pot": 3,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 2,
           "draws": 0,
-          "losses": 1,
+          "losses": 0,
           "matchPoints": 2.0,
           "stagePoints": 0,
           "points": 2.0
         },
         {
-          "name": "Uruguay",
+          "name": "Japan",
           "pot": 2,
           "furthestStage": "Group Stage",
           "stageRank": 0,
-          "wins": 0,
-          "draws": 2,
+          "wins": 1,
+          "draws": 1,
           "losses": 0,
+          "matchPoints": 1.5,
+          "stagePoints": 0,
+          "points": 1.5
+        },
+        {
+          "name": "Croatia",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
           "matchPoints": 1.0,
           "stagePoints": 0,
           "points": 1.0
         },
         {
-          "name": "Czechia",
+          "name": "New Zealand",
           "pot": 4,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 1,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "Qatar",
+          "pot": 3,
           "furthestStage": "Group Stage",
           "stageRank": 0,
           "wins": 0,
@@ -147,23 +239,11 @@
           "matchPoints": 0.5,
           "stagePoints": 0,
           "points": 0.5
-        },
-        {
-          "name": "Uzbekistan",
-          "pot": 3,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 2,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
         }
       ],
-      "totalPoints": 8.5,
-      "teamsAdvancedCount": 0,
-      "rank": 2
+      "totalPoints": 11.5,
+      "teamsAdvancedCount": 1,
+      "rank": 3
     },
     {
       "name": "Eriku",
@@ -205,18 +285,6 @@
           "points": 1.5
         },
         {
-          "name": "Ecuador",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 1,
-          "losses": 1,
-          "matchPoints": 1.5,
-          "stagePoints": 0,
-          "points": 1.5
-        },
-        {
           "name": "Scotland",
           "pot": 3,
           "furthestStage": "Group Stage",
@@ -227,6 +295,18 @@
           "matchPoints": 1.0,
           "stagePoints": 0,
           "points": 1.0
+        },
+        {
+          "name": "Ecuador",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 1,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
         },
         {
           "name": "Haiti",
@@ -241,185 +321,13 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 8.5,
-      "teamsAdvancedCount": 0,
-      "rank": 2
-    },
-    {
-      "name": "Rain",
-      "teams": [
-        {
-          "name": "Argentina",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 2,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 2.0,
-          "stagePoints": 0,
-          "points": 2.0
-        },
-        {
-          "name": "United States",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 2,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 2.0,
-          "stagePoints": 0,
-          "points": 2.0
-        },
-        {
-          "name": "Paraguay",
-          "pot": 3,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 1,
-          "losses": 1,
-          "matchPoints": 1.5,
-          "stagePoints": 0,
-          "points": 1.5
-        },
-        {
-          "name": "Australia",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 1,
-          "losses": 1,
-          "matchPoints": 1.5,
-          "stagePoints": 0,
-          "points": 1.5
-        },
-        {
-          "name": "Austria",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "Senegal",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 2,
-          "matchPoints": 0.0,
-          "stagePoints": 0,
-          "points": 0.0
-        }
-      ],
-      "totalPoints": 8.0,
-      "teamsAdvancedCount": 0,
-      "rank": 4
-    },
-    {
-      "name": "Rea",
-      "teams": [
-        {
-          "name": "Colombia",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 2,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 2.0,
-          "stagePoints": 0,
-          "points": 2.0
-        },
-        {
-          "name": "Japan",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 2,
-          "losses": 0,
-          "matchPoints": 2.0,
-          "stagePoints": 0,
-          "points": 2.0
-        },
-        {
-          "name": "Germany",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 2,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 2.0,
-          "stagePoints": 0,
-          "points": 2.0
-        },
-        {
-          "name": "Croatia",
-          "pot": 2,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 1.0,
-          "stagePoints": 0,
-          "points": 1.0
-        },
-        {
-          "name": "New Zealand",
-          "pot": 4,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 1,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        },
-        {
-          "name": "Qatar",
-          "pot": 3,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 0,
-          "draws": 1,
-          "losses": 2,
-          "matchPoints": 0.5,
-          "stagePoints": 0,
-          "points": 0.5
-        }
-      ],
-      "totalPoints": 8.0,
+      "totalPoints": 7.5,
       "teamsAdvancedCount": 0,
       "rank": 4
     },
     {
       "name": "Gav",
       "teams": [
-        {
-          "name": "Sweden",
-          "pot": 4,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 1,
-          "losses": 1,
-          "matchPoints": 1.5,
-          "stagePoints": 0,
-          "points": 1.5
-        },
         {
           "name": "Egypt",
           "pot": 3,
@@ -457,6 +365,18 @@
           "points": 1.5
         },
         {
+          "name": "Sweden",
+          "pot": 4,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
           "name": "Turkiye",
           "pot": 4,
           "furthestStage": "Group Stage",
@@ -481,7 +401,87 @@
           "points": 0.5
         }
       ],
-      "totalPoints": 7.5,
+      "totalPoints": 7.0,
+      "teamsAdvancedCount": 0,
+      "rank": 5
+    },
+    {
+      "name": "Drew",
+      "teams": [
+        {
+          "name": "Switzerland",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 2,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 2.5,
+          "stagePoints": 0,
+          "points": 2.5
+        },
+        {
+          "name": "Netherlands",
+          "pot": 1,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 1.5,
+          "stagePoints": 0,
+          "points": 1.5
+        },
+        {
+          "name": "Ivory Coast",
+          "pot": 3,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "Uruguay",
+          "pot": 2,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 2,
+          "losses": 0,
+          "matchPoints": 1.0,
+          "stagePoints": 0,
+          "points": 1.0
+        },
+        {
+          "name": "Czechia",
+          "pot": 4,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 1,
+          "losses": 1,
+          "matchPoints": 0.5,
+          "stagePoints": 0,
+          "points": 0.5
+        },
+        {
+          "name": "Uzbekistan",
+          "pot": 3,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "matchPoints": 0.0,
+          "stagePoints": 0,
+          "points": 0.0
+        }
+      ],
+      "totalPoints": 6.5,
       "teamsAdvancedCount": 0,
       "rank": 6
     },
@@ -519,7 +519,7 @@
           "stageRank": 0,
           "wins": 1,
           "draws": 0,
-          "losses": 2,
+          "losses": 1,
           "matchPoints": 1.0,
           "stagePoints": 0,
           "points": 1.0
@@ -568,16 +568,58 @@
   ],
   "upcomingMatches": [
     {
-      "utcDate": "2026-06-26T19:00:00Z",
+      "utcDate": "2026-06-25T01:00:00Z",
       "stage": "GROUP_STAGE",
       "status": "TIMED",
+      "homeTeam": "Czechia",
+      "awayTeam": "Mexico"
+    },
+    {
+      "utcDate": "2026-06-25T01:00:00Z",
+      "stage": "GROUP_STAGE",
+      "status": "TIMED",
+      "homeTeam": "South Africa",
+      "awayTeam": "South Korea"
+    },
+    {
+      "utcDate": "2026-06-25T20:00:00Z",
+      "stage": "GROUP_STAGE",
+      "status": "TIMED",
+      "homeTeam": "Ecuador",
+      "awayTeam": "Germany"
+    },
+    {
+      "utcDate": "2026-06-25T20:00:00Z",
+      "stage": "GROUP_STAGE",
+      "status": "TIMED",
+      "homeTeam": "Curaçao",
+      "awayTeam": "Ivory Coast"
+    },
+    {
+      "utcDate": "2026-06-25T23:00:00Z",
+      "stage": "GROUP_STAGE",
+      "status": "TIMED",
+      "homeTeam": "Tunisia",
+      "awayTeam": "Netherlands"
+    },
+    {
+      "utcDate": "2026-06-25T23:00:00Z",
+      "stage": "GROUP_STAGE",
+      "status": "TIMED",
+      "homeTeam": "Japan",
+      "awayTeam": "Sweden"
+    },
+    {
+      "utcDate": "2026-06-26T19:00:00Z",
+      "stage": "GROUP_STAGE",
+      "status": "LIVE",
       "homeTeam": "Norway",
       "awayTeam": "France"
     },
     {
       "utcDate": "2026-06-26T19:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "LIVE",
       "homeTeam": "Senegal",
       "awayTeam": "Iraq"
     },
@@ -669,7 +711,7 @@
       "utcDate": "2026-06-29T20:30:00Z",
       "stage": "LAST_32",
       "status": "TIMED",
-      "homeTeam": "TBD",
+      "homeTeam": "Germany",
       "awayTeam": "TBD"
     },
     {
@@ -697,7 +739,7 @@
       "utcDate": "2026-07-01T01:00:00Z",
       "stage": "LAST_32",
       "status": "TIMED",
-      "homeTeam": "TBD",
+      "homeTeam": "Mexico",
       "awayTeam": "TBD"
     },
     {
@@ -718,7 +760,7 @@
       "utcDate": "2026-07-02T00:00:00Z",
       "stage": "LAST_32",
       "status": "TIMED",
-      "homeTeam": "TBD",
+      "homeTeam": "United States",
       "awayTeam": "TBD"
     },
     {
@@ -745,48 +787,6 @@
     {
       "utcDate": "2026-07-03T18:00:00Z",
       "stage": "LAST_32",
-      "status": "TIMED",
-      "homeTeam": "TBD",
-      "awayTeam": "TBD"
-    },
-    {
-      "utcDate": "2026-07-03T22:00:00Z",
-      "stage": "LAST_32",
-      "status": "TIMED",
-      "homeTeam": "TBD",
-      "awayTeam": "TBD"
-    },
-    {
-      "utcDate": "2026-07-04T01:30:00Z",
-      "stage": "LAST_32",
-      "status": "TIMED",
-      "homeTeam": "TBD",
-      "awayTeam": "TBD"
-    },
-    {
-      "utcDate": "2026-07-04T17:00:00Z",
-      "stage": "LAST_16",
-      "status": "TIMED",
-      "homeTeam": "TBD",
-      "awayTeam": "TBD"
-    },
-    {
-      "utcDate": "2026-07-04T21:00:00Z",
-      "stage": "LAST_16",
-      "status": "TIMED",
-      "homeTeam": "TBD",
-      "awayTeam": "TBD"
-    },
-    {
-      "utcDate": "2026-07-05T20:00:00Z",
-      "stage": "LAST_16",
-      "status": "TIMED",
-      "homeTeam": "TBD",
-      "awayTeam": "TBD"
-    },
-    {
-      "utcDate": "2026-07-06T00:00:00Z",
-      "stage": "LAST_16",
       "status": "TIMED",
       "homeTeam": "TBD",
       "awayTeam": "TBD"
