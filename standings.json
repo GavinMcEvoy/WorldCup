@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-06-26T23:05:07.687423Z",
+  "lastUpdated": "2026-06-27T03:24:13.314946Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 62,
+  "finishedMatches": 64,
   "tournamentStarted": true,
   "players": [
     {
@@ -234,14 +234,14 @@
           "furthestStage": "Group Stage",
           "stageRank": 0,
           "wins": 0,
-          "draws": 1,
+          "draws": 2,
           "losses": 1,
-          "matchPoints": 0.5,
+          "matchPoints": 1.0,
           "stagePoints": 0,
-          "points": 0.5
+          "points": 1.0
         }
       ],
-      "totalPoints": 22.0,
+      "totalPoints": 22.5,
       "teamsAdvancedCount": 3,
       "rank": 3
     },
@@ -291,7 +291,7 @@
           "stageRank": 0,
           "wins": 0,
           "draws": 2,
-          "losses": 0,
+          "losses": 1,
           "matchPoints": 1.0,
           "stagePoints": 0,
           "points": 1.0
@@ -409,6 +409,18 @@
       "name": "Gav",
       "teams": [
         {
+          "name": "Spain",
+          "pot": 1,
+          "furthestStage": "Group Stage",
+          "stageRank": 0,
+          "wins": 2,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 2.5,
+          "stagePoints": 0,
+          "points": 2.5
+        },
+        {
           "name": "Sweden",
           "pot": 4,
           "furthestStage": "Group Stage",
@@ -445,18 +457,6 @@
           "points": 1.5
         },
         {
-          "name": "Spain",
-          "pot": 1,
-          "furthestStage": "Group Stage",
-          "stageRank": 0,
-          "wins": 1,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 1.5,
-          "stagePoints": 0,
-          "points": 1.5
-        },
-        {
           "name": "Turkiye",
           "pot": 4,
           "furthestStage": "Group Stage",
@@ -481,7 +481,7 @@
           "points": 0.5
         }
       ],
-      "totalPoints": 7.5,
+      "totalPoints": 8.5,
       "teamsAdvancedCount": 0,
       "rank": 6
     },
@@ -568,30 +568,16 @@
   ],
   "upcomingMatches": [
     {
-      "utcDate": "2026-06-27T00:00:00Z",
-      "stage": "GROUP_STAGE",
-      "status": "TIMED",
-      "homeTeam": "Uruguay",
-      "awayTeam": "Spain"
-    },
-    {
-      "utcDate": "2026-06-27T00:00:00Z",
-      "stage": "GROUP_STAGE",
-      "status": "TIMED",
-      "homeTeam": "Cape Verde Islands",
-      "awayTeam": "Saudi Arabia"
-    },
-    {
       "utcDate": "2026-06-27T03:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "LIVE",
       "homeTeam": "New Zealand",
       "awayTeam": "Belgium"
     },
     {
       "utcDate": "2026-06-27T03:00:00Z",
       "stage": "GROUP_STAGE",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Egypt",
       "awayTeam": "Iran"
     },
@@ -786,6 +772,20 @@
     },
     {
       "utcDate": "2026-07-07T00:00:00Z",
+      "stage": "LAST_16",
+      "status": "TIMED",
+      "homeTeam": "TBD",
+      "awayTeam": "TBD"
+    },
+    {
+      "utcDate": "2026-07-07T16:00:00Z",
+      "stage": "LAST_16",
+      "status": "TIMED",
+      "homeTeam": "TBD",
+      "awayTeam": "TBD"
+    },
+    {
+      "utcDate": "2026-07-07T20:00:00Z",
       "stage": "LAST_16",
       "status": "TIMED",
       "homeTeam": "TBD",
