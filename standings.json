@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-28T17:10:50.775270Z",
+  "lastUpdated": "2026-06-28T19:18:33.729128Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 72,
@@ -570,7 +570,7 @@
     {
       "utcDate": "2026-06-28T19:00:00Z",
       "stage": "LAST_32",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "South Africa",
       "awayTeam": "Canada"
     },
