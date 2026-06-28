@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-06-28T21:00:25.141334Z",
+  "lastUpdated": "2026-06-28T23:01:33.880031Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 72,
+  "finishedMatches": 73,
   "tournamentStarted": true,
   "players": [
     {
@@ -141,12 +141,12 @@
           "pot": 1,
           "furthestStage": "Round of 32",
           "stageRank": 1,
-          "wins": 1,
+          "wins": 2,
           "draws": 1,
           "losses": 1,
-          "matchPoints": 1.5,
+          "matchPoints": 2.5,
           "stagePoints": 4,
-          "points": 5.5
+          "points": 6.5
         },
         {
           "name": "Saudi Arabia",
@@ -161,7 +161,7 @@
           "points": 1.0
         }
       ],
-      "totalPoints": 68.0,
+      "totalPoints": 69.0,
       "teamsAdvancedCount": 5,
       "rank": 2
     },
@@ -567,13 +567,6 @@
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-06-28T19:00:00Z",
-      "stage": "LAST_32",
-      "status": "PAUSED",
-      "homeTeam": "South Africa",
-      "awayTeam": "Canada"
-    },
     {
       "utcDate": "2026-06-29T17:00:00Z",
       "stage": "LAST_32",
