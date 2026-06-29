@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T21:25:58.425687Z",
+  "lastUpdated": "2026-06-29T22:57:13.307873Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 74,
@@ -570,7 +570,7 @@
     {
       "utcDate": "2026-06-29T20:30:00Z",
       "stage": "LAST_32",
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "homeTeam": "Germany",
       "awayTeam": "Paraguay"
     },
