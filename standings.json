@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T03:52:48.930172Z",
+  "lastUpdated": "2026-06-29T08:58:23.289288Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 73,
@@ -113,6 +113,18 @@
           "points": 18.5
         },
         {
+          "name": "Canada",
+          "pot": 1,
+          "furthestStage": "Round of 16",
+          "stageRank": 2,
+          "wins": 2,
+          "draws": 1,
+          "losses": 1,
+          "matchPoints": 2.5,
+          "stagePoints": 8,
+          "points": 10.5
+        },
+        {
           "name": "Mexico",
           "pot": 1,
           "furthestStage": "Round of 32",
@@ -137,18 +149,6 @@
           "points": 6.5
         },
         {
-          "name": "Canada",
-          "pot": 1,
-          "furthestStage": "Round of 32",
-          "stageRank": 1,
-          "wins": 2,
-          "draws": 1,
-          "losses": 1,
-          "matchPoints": 2.5,
-          "stagePoints": 4,
-          "points": 6.5
-        },
-        {
           "name": "Saudi Arabia",
           "pot": 3,
           "furthestStage": "Group Stage",
@@ -161,7 +161,7 @@
           "points": 1.0
         }
       ],
-      "totalPoints": 69.0,
+      "totalPoints": 73.0,
       "teamsAdvancedCount": 5,
       "rank": 2
     },
@@ -676,7 +676,7 @@
       "utcDate": "2026-07-04T17:00:00Z",
       "stage": "LAST_16",
       "status": "TIMED",
-      "homeTeam": "TBD",
+      "homeTeam": "Canada",
       "awayTeam": "TBD"
     },
     {
