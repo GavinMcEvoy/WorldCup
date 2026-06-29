@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-06-29T18:11:40.029418Z",
+  "lastUpdated": "2026-06-29T21:25:58.425687Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 73,
+  "finishedMatches": 74,
   "tournamentStarted": true,
   "players": [
     {
@@ -125,6 +125,18 @@
           "points": 10.5
         },
         {
+          "name": "Brazil",
+          "pot": 1,
+          "furthestStage": "Round of 32",
+          "stageRank": 1,
+          "wins": 3,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 3.5,
+          "stagePoints": 4,
+          "points": 7.5
+        },
+        {
           "name": "Mexico",
           "pot": 1,
           "furthestStage": "Round of 32",
@@ -135,18 +147,6 @@
           "matchPoints": 3.0,
           "stagePoints": 4,
           "points": 7.0
-        },
-        {
-          "name": "Brazil",
-          "pot": 1,
-          "furthestStage": "Round of 32",
-          "stageRank": 1,
-          "wins": 2,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 2.5,
-          "stagePoints": 4,
-          "points": 6.5
         },
         {
           "name": "Saudi Arabia",
@@ -161,7 +161,7 @@
           "points": 1.0
         }
       ],
-      "totalPoints": 73.0,
+      "totalPoints": 74.0,
       "teamsAdvancedCount": 5,
       "rank": 2
     },
@@ -439,7 +439,7 @@
           "stageRank": 1,
           "wins": 1,
           "draws": 2,
-          "losses": 0,
+          "losses": 1,
           "matchPoints": 2.0,
           "stagePoints": 8,
           "points": 10.0
@@ -568,16 +568,9 @@
   ],
   "upcomingMatches": [
     {
-      "utcDate": "2026-06-29T17:00:00Z",
-      "stage": "LAST_32",
-      "status": "PAUSED",
-      "homeTeam": "Brazil",
-      "awayTeam": "Japan"
-    },
-    {
       "utcDate": "2026-06-29T20:30:00Z",
       "stage": "LAST_32",
-      "status": "TIMED",
+      "status": "PAUSED",
       "homeTeam": "Germany",
       "awayTeam": "Paraguay"
     },
