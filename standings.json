@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-06-30T03:36:51.779267Z",
+  "lastUpdated": "2026-06-30T07:53:35.976537Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 75,
+  "finishedMatches": 76,
   "tournamentStarted": true,
   "players": [
     {
@@ -113,6 +113,18 @@
           "points": 18.5
         },
         {
+          "name": "Brazil",
+          "pot": 1,
+          "furthestStage": "Round of 16",
+          "stageRank": 2,
+          "wins": 3,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 3.5,
+          "stagePoints": 8,
+          "points": 11.5
+        },
+        {
           "name": "Canada",
           "pot": 1,
           "furthestStage": "Round of 16",
@@ -123,18 +135,6 @@
           "matchPoints": 2.5,
           "stagePoints": 8,
           "points": 10.5
-        },
-        {
-          "name": "Brazil",
-          "pot": 1,
-          "furthestStage": "Round of 32",
-          "stageRank": 1,
-          "wins": 3,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 3.5,
-          "stagePoints": 4,
-          "points": 7.5
         },
         {
           "name": "Mexico",
@@ -161,7 +161,7 @@
           "points": 1.0
         }
       ],
-      "totalPoints": 74.0,
+      "totalPoints": 78.0,
       "teamsAdvancedCount": 5,
       "rank": 2
     },
@@ -171,14 +171,14 @@
         {
           "name": "Paraguay",
           "pot": 3,
-          "furthestStage": "Round of 32",
-          "stageRank": 1,
+          "furthestStage": "Round of 16",
+          "stageRank": 2,
           "wins": 2,
           "draws": 1,
           "losses": 1,
           "matchPoints": 2.5,
-          "stagePoints": 17,
-          "points": 19.5
+          "stagePoints": 26,
+          "points": 28.5
         },
         {
           "name": "Australia",
@@ -241,7 +241,7 @@
           "points": 6.0
         }
       ],
-      "totalPoints": 60.5,
+      "totalPoints": 69.5,
       "teamsAdvancedCount": 6,
       "rank": 3
     },
@@ -263,14 +263,14 @@
         {
           "name": "Morocco",
           "pot": 2,
-          "furthestStage": "Round of 32",
-          "stageRank": 1,
-          "wins": 2,
+          "furthestStage": "Round of 16",
+          "stageRank": 2,
+          "wins": 3,
           "draws": 1,
           "losses": 0,
-          "matchPoints": 2.5,
-          "stagePoints": 8,
-          "points": 10.5
+          "matchPoints": 3.5,
+          "stagePoints": 14,
+          "points": 17.5
         },
         {
           "name": "Ecuador",
@@ -321,7 +321,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 57.5,
+      "totalPoints": 64.5,
       "teamsAdvancedCount": 4,
       "rank": 4
     },
@@ -359,7 +359,7 @@
           "stageRank": 1,
           "wins": 2,
           "draws": 1,
-          "losses": 0,
+          "losses": 1,
           "matchPoints": 2.5,
           "stagePoints": 4,
           "points": 6.5
@@ -568,13 +568,6 @@
   ],
   "upcomingMatches": [
     {
-      "utcDate": "2026-06-30T01:00:00Z",
-      "stage": "LAST_32",
-      "status": "PAUSED",
-      "homeTeam": "Netherlands",
-      "awayTeam": "Morocco"
-    },
-    {
       "utcDate": "2026-06-30T17:00:00Z",
       "stage": "LAST_32",
       "status": "TIMED",
@@ -663,20 +656,20 @@
       "stage": "LAST_16",
       "status": "TIMED",
       "homeTeam": "Canada",
-      "awayTeam": "TBD"
+      "awayTeam": "Morocco"
     },
     {
       "utcDate": "2026-07-04T21:00:00Z",
       "stage": "LAST_16",
       "status": "TIMED",
-      "homeTeam": "TBD",
+      "homeTeam": "Paraguay",
       "awayTeam": "TBD"
     },
     {
       "utcDate": "2026-07-05T20:00:00Z",
       "stage": "LAST_16",
       "status": "TIMED",
-      "homeTeam": "TBD",
+      "homeTeam": "Brazil",
       "awayTeam": "TBD"
     },
     {
