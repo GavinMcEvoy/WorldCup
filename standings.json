@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-06-29T22:57:13.307873Z",
+  "lastUpdated": "2026-06-30T03:36:51.779267Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 74,
+  "finishedMatches": 75,
   "tournamentStarted": true,
   "players": [
     {
@@ -173,12 +173,12 @@
           "pot": 3,
           "furthestStage": "Round of 32",
           "stageRank": 1,
-          "wins": 1,
+          "wins": 2,
           "draws": 1,
           "losses": 1,
-          "matchPoints": 1.5,
+          "matchPoints": 2.5,
           "stagePoints": 17,
-          "points": 18.5
+          "points": 19.5
         },
         {
           "name": "Australia",
@@ -241,7 +241,7 @@
           "points": 6.0
         }
       ],
-      "totalPoints": 59.5,
+      "totalPoints": 60.5,
       "teamsAdvancedCount": 6,
       "rank": 3
     },
@@ -451,7 +451,7 @@
           "stageRank": 1,
           "wins": 2,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "matchPoints": 2.0,
           "stagePoints": 4,
           "points": 6.0
@@ -568,16 +568,9 @@
   ],
   "upcomingMatches": [
     {
-      "utcDate": "2026-06-29T20:30:00Z",
-      "stage": "LAST_32",
-      "status": "IN_PLAY",
-      "homeTeam": "Germany",
-      "awayTeam": "Paraguay"
-    },
-    {
       "utcDate": "2026-06-30T01:00:00Z",
       "stage": "LAST_32",
-      "status": "TIMED",
+      "status": "PAUSED",
       "homeTeam": "Netherlands",
       "awayTeam": "Morocco"
     },
