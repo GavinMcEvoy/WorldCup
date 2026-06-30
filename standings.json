@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-06-30T17:53:14.442005Z",
+  "lastUpdated": "2026-06-30T19:56:36.389290Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 76,
+  "finishedMatches": 77,
   "tournamentStarted": true,
   "players": [
     {
@@ -335,7 +335,7 @@
           "stageRank": 1,
           "wins": 2,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "matchPoints": 2.0,
           "stagePoints": 17,
           "points": 19.0
@@ -493,12 +493,12 @@
           "pot": 3,
           "furthestStage": "Round of 32",
           "stageRank": 1,
-          "wins": 2,
+          "wins": 3,
           "draws": 0,
           "losses": 1,
-          "matchPoints": 2.0,
+          "matchPoints": 3.0,
           "stagePoints": 17,
-          "points": 19.0
+          "points": 20.0
         },
         {
           "name": "Belgium",
@@ -561,19 +561,12 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 32.0,
+      "totalPoints": 33.0,
       "teamsAdvancedCount": 3,
       "rank": 7
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-06-30T17:00:00Z",
-      "stage": "LAST_32",
-      "status": "IN_PLAY",
-      "homeTeam": "Ivory Coast",
-      "awayTeam": "Norway"
-    },
     {
       "utcDate": "2026-06-30T21:00:00Z",
       "stage": "LAST_32",
