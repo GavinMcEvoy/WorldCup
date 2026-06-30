@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-06-30T21:40:21.635138Z",
+  "lastUpdated": "2026-06-30T23:12:18.660847Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 77,
+  "finishedMatches": 78,
   "tournamentStarted": true,
   "players": [
     {
@@ -27,7 +27,7 @@
           "stageRank": 1,
           "wins": 1,
           "draws": 1,
-          "losses": 1,
+          "losses": 2,
           "matchPoints": 1.5,
           "stagePoints": 28,
           "points": 29.5
@@ -289,12 +289,12 @@
           "pot": 1,
           "furthestStage": "Round of 32",
           "stageRank": 1,
-          "wins": 3,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
-          "matchPoints": 3.0,
+          "matchPoints": 4.0,
           "stagePoints": 4,
-          "points": 7.0
+          "points": 8.0
         },
         {
           "name": "Scotland",
@@ -321,7 +321,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 64.5,
+      "totalPoints": 65.5,
       "teamsAdvancedCount": 4,
       "rank": 4
     },
@@ -567,13 +567,6 @@
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-06-30T21:00:00Z",
-      "stage": "LAST_32",
-      "status": "IN_PLAY",
-      "homeTeam": "France",
-      "awayTeam": "Sweden"
-    },
     {
       "utcDate": "2026-07-01T01:00:00Z",
       "stage": "LAST_32",
