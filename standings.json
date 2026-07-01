@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30T23:12:18.660847Z",
+  "lastUpdated": "2026-07-01T03:50:17.259082Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 78,
@@ -570,7 +570,7 @@
     {
       "utcDate": "2026-07-01T01:00:00Z",
       "stage": "LAST_32",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Mexico",
       "awayTeam": "Ecuador"
     },
