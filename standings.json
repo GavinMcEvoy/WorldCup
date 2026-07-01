@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T12:32:49.267010Z",
+  "lastUpdated": "2026-07-01T16:26:20.781655Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 79,
@@ -570,7 +570,7 @@
     {
       "utcDate": "2026-07-01T16:00:00Z",
       "stage": "LAST_32",
-      "status": "TIMED",
+      "status": "LIVE",
       "homeTeam": "England",
       "awayTeam": "Congo DR"
     },
