@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-07-01T21:27:40.942781Z",
+  "lastUpdated": "2026-07-01T23:15:05.132557Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 80,
+  "finishedMatches": 81,
   "tournamentStarted": true,
   "players": [
     {
@@ -291,7 +291,7 @@
           "stageRank": 1,
           "wins": 1,
           "draws": 0,
-          "losses": 2,
+          "losses": 3,
           "matchPoints": 1.0,
           "stagePoints": 8,
           "points": 9.0
@@ -345,12 +345,12 @@
           "pot": 1,
           "furthestStage": "Round of 32",
           "stageRank": 1,
-          "wins": 1,
+          "wins": 2,
           "draws": 2,
           "losses": 0,
-          "matchPoints": 2.0,
+          "matchPoints": 3.0,
           "stagePoints": 4,
-          "points": 6.0
+          "points": 7.0
         },
         {
           "name": "Portugal",
@@ -401,7 +401,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 42.0,
+      "totalPoints": 43.0,
       "teamsAdvancedCount": 3,
       "rank": 5
     },
@@ -567,13 +567,6 @@
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-07-01T20:00:00Z",
-      "stage": "LAST_32",
-      "status": "IN_PLAY",
-      "homeTeam": "Belgium",
-      "awayTeam": "Senegal"
-    },
     {
       "utcDate": "2026-07-02T00:00:00Z",
       "stage": "LAST_32",
