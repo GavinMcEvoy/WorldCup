@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-02T03:32:15.029335Z",
+  "lastUpdated": "2026-07-02T07:31:46.167495Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 82,
@@ -47,14 +47,14 @@
         {
           "name": "England",
           "pot": 1,
-          "furthestStage": "Round of 32",
-          "stageRank": 1,
+          "furthestStage": "Round of 16",
+          "stageRank": 2,
           "wins": 3,
           "draws": 1,
           "losses": 0,
           "matchPoints": 3.5,
-          "stagePoints": 4,
-          "points": 7.5
+          "stagePoints": 8,
+          "points": 11.5
         },
         {
           "name": "Spain",
@@ -81,7 +81,7 @@
           "points": 1.0
         }
       ],
-      "totalPoints": 93.0,
+      "totalPoints": 97.0,
       "teamsAdvancedCount": 5,
       "rank": 1
     },
@@ -113,6 +113,18 @@
           "points": 18.5
         },
         {
+          "name": "Mexico",
+          "pot": 1,
+          "furthestStage": "Round of 16",
+          "stageRank": 2,
+          "wins": 4,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 4.0,
+          "stagePoints": 8,
+          "points": 12.0
+        },
+        {
           "name": "Brazil",
           "pot": 1,
           "furthestStage": "Round of 16",
@@ -137,18 +149,6 @@
           "points": 10.5
         },
         {
-          "name": "Mexico",
-          "pot": 1,
-          "furthestStage": "Round of 32",
-          "stageRank": 1,
-          "wins": 4,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 4.0,
-          "stagePoints": 4,
-          "points": 8.0
-        },
-        {
           "name": "Saudi Arabia",
           "pot": 3,
           "furthestStage": "Group Stage",
@@ -161,7 +161,7 @@
           "points": 1.0
         }
       ],
-      "totalPoints": 79.0,
+      "totalPoints": 83.0,
       "teamsAdvancedCount": 5,
       "rank": 2
     },
@@ -179,6 +179,18 @@
           "matchPoints": 2.5,
           "stagePoints": 26,
           "points": 28.5
+        },
+        {
+          "name": "United States",
+          "pot": 1,
+          "furthestStage": "Round of 16",
+          "stageRank": 2,
+          "wins": 3,
+          "draws": 0,
+          "losses": 1,
+          "matchPoints": 3.0,
+          "stagePoints": 8,
+          "points": 11.0
         },
         {
           "name": "Australia",
@@ -227,21 +239,9 @@
           "matchPoints": 3.0,
           "stagePoints": 4,
           "points": 7.0
-        },
-        {
-          "name": "United States",
-          "pot": 1,
-          "furthestStage": "Round of 32",
-          "stageRank": 1,
-          "wins": 3,
-          "draws": 0,
-          "losses": 1,
-          "matchPoints": 3.0,
-          "stagePoints": 4,
-          "points": 7.0
         }
       ],
-      "totalPoints": 70.5,
+      "totalPoints": 74.5,
       "teamsAdvancedCount": 6,
       "rank": 3
     },
@@ -343,14 +343,14 @@
         {
           "name": "Belgium",
           "pot": 1,
-          "furthestStage": "Round of 32",
-          "stageRank": 1,
+          "furthestStage": "Round of 16",
+          "stageRank": 2,
           "wins": 2,
           "draws": 2,
           "losses": 0,
           "matchPoints": 3.0,
-          "stagePoints": 4,
-          "points": 7.0
+          "stagePoints": 8,
+          "points": 11.0
         },
         {
           "name": "Portugal",
@@ -401,7 +401,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 43.0,
+      "totalPoints": 47.0,
       "teamsAdvancedCount": 3,
       "rank": 5
     },
@@ -634,8 +634,8 @@
       "utcDate": "2026-07-06T00:00:00Z",
       "stage": "LAST_16",
       "status": "TIMED",
-      "homeTeam": "TBD",
-      "awayTeam": "TBD"
+      "homeTeam": "Mexico",
+      "awayTeam": "England"
     },
     {
       "utcDate": "2026-07-06T19:00:00Z",
@@ -648,8 +648,8 @@
       "utcDate": "2026-07-07T00:00:00Z",
       "stage": "LAST_16",
       "status": "TIMED",
-      "homeTeam": "TBD",
-      "awayTeam": "TBD"
+      "homeTeam": "United States",
+      "awayTeam": "Belgium"
     },
     {
       "utcDate": "2026-07-07T16:00:00Z",
