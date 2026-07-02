@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-02T21:06:12.683397Z",
+  "lastUpdated": "2026-07-02T23:05:49.493993Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 83,
@@ -570,7 +570,7 @@
     {
       "utcDate": "2026-07-02T23:00:00Z",
       "stage": "LAST_32",
-      "status": "TIMED",
+      "status": "LIVE",
       "homeTeam": "Portugal",
       "awayTeam": "Croatia"
     },
