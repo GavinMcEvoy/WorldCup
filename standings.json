@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-07-02T23:05:49.493993Z",
+  "lastUpdated": "2026-07-03T02:54:45.121118Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 83,
+  "finishedMatches": 84,
   "tournamentStarted": true,
   "players": [
     {
@@ -357,12 +357,12 @@
           "pot": 1,
           "furthestStage": "Round of 32",
           "stageRank": 1,
-          "wins": 1,
+          "wins": 2,
           "draws": 2,
           "losses": 0,
-          "matchPoints": 2.0,
+          "matchPoints": 3.0,
           "stagePoints": 4,
-          "points": 6.0
+          "points": 7.0
         },
         {
           "name": "South Korea",
@@ -401,7 +401,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 47.0,
+      "totalPoints": 48.0,
       "teamsAdvancedCount": 3,
       "rank": 5
     },
@@ -507,7 +507,7 @@
           "stageRank": 1,
           "wins": 2,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "matchPoints": 2.0,
           "stagePoints": 8,
           "points": 10.0
@@ -567,13 +567,6 @@
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-07-02T23:00:00Z",
-      "stage": "LAST_32",
-      "status": "LIVE",
-      "homeTeam": "Portugal",
-      "awayTeam": "Croatia"
-    },
     {
       "utcDate": "2026-07-03T03:00:00Z",
       "stage": "LAST_32",
