@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T21:05:20.606409Z",
+  "lastUpdated": "2026-07-03T23:02:53.263466Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 86,
@@ -570,7 +570,7 @@
     {
       "utcDate": "2026-07-03T22:00:00Z",
       "stage": "LAST_32",
-      "status": "TIMED",
+      "status": "PAUSED",
       "homeTeam": "Argentina",
       "awayTeam": "Cape Verde Islands"
     },
