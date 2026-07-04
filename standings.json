@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-04T20:56:59.942543Z",
+  "lastUpdated": "2026-07-04T22:57:00.253246Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 89,
@@ -570,7 +570,7 @@
     {
       "utcDate": "2026-07-04T21:00:00Z",
       "stage": "LAST_16",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Paraguay",
       "awayTeam": "France"
     },
