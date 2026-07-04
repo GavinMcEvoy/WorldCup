@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-07-04T17:04:46.983157Z",
+  "lastUpdated": "2026-07-04T19:11:53.894318Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 88,
+  "finishedMatches": 89,
   "tournamentStarted": true,
   "players": [
     {
@@ -143,7 +143,7 @@
           "stageRank": 2,
           "wins": 2,
           "draws": 1,
-          "losses": 1,
+          "losses": 2,
           "matchPoints": 2.5,
           "stagePoints": 8,
           "points": 10.5
@@ -265,12 +265,12 @@
           "pot": 2,
           "furthestStage": "Round of 16",
           "stageRank": 2,
-          "wins": 3,
+          "wins": 4,
           "draws": 1,
           "losses": 0,
-          "matchPoints": 3.5,
+          "matchPoints": 4.5,
           "stagePoints": 14,
-          "points": 17.5
+          "points": 18.5
         },
         {
           "name": "France",
@@ -321,7 +321,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 69.5,
+      "totalPoints": 70.5,
       "teamsAdvancedCount": 4,
       "rank": 4
     },
@@ -567,13 +567,6 @@
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-07-04T17:00:00Z",
-      "stage": "LAST_16",
-      "status": "TIMED",
-      "homeTeam": "Canada",
-      "awayTeam": "Morocco"
-    },
     {
       "utcDate": "2026-07-04T21:00:00Z",
       "stage": "LAST_16",
