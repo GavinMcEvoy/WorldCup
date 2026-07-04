@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-07-03T23:02:53.263466Z",
+  "lastUpdated": "2026-07-04T02:51:08.105223Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 86,
+  "finishedMatches": 87,
   "tournamentStarted": true,
   "players": [
     {
@@ -233,15 +233,15 @@
           "pot": 1,
           "furthestStage": "Round of 32",
           "stageRank": 1,
-          "wins": 3,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
-          "matchPoints": 3.0,
+          "matchPoints": 4.0,
           "stagePoints": 4,
-          "points": 7.0
+          "points": 8.0
         }
       ],
-      "totalPoints": 74.5,
+      "totalPoints": 75.5,
       "teamsAdvancedCount": 6,
       "rank": 3
     },
@@ -568,16 +568,9 @@
   ],
   "upcomingMatches": [
     {
-      "utcDate": "2026-07-03T22:00:00Z",
-      "stage": "LAST_32",
-      "status": "PAUSED",
-      "homeTeam": "Argentina",
-      "awayTeam": "Cape Verde Islands"
-    },
-    {
       "utcDate": "2026-07-04T01:30:00Z",
       "stage": "LAST_32",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Colombia",
       "awayTeam": "Ghana"
     },
