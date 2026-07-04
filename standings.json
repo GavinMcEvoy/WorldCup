@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-07-04T02:51:08.105223Z",
+  "lastUpdated": "2026-07-04T06:46:32.380340Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 87,
+  "finishedMatches": 88,
   "tournamentStarted": true,
   "players": [
     {
@@ -35,14 +35,14 @@
         {
           "name": "Egypt",
           "pot": 3,
-          "furthestStage": "Round of 32",
-          "stageRank": 1,
+          "furthestStage": "Round of 16",
+          "stageRank": 2,
           "wins": 2,
           "draws": 2,
           "losses": 0,
           "matchPoints": 3.0,
-          "stagePoints": 17,
-          "points": 20.0
+          "stagePoints": 26,
+          "points": 29.0
         },
         {
           "name": "England",
@@ -59,14 +59,14 @@
         {
           "name": "Spain",
           "pot": 1,
-          "furthestStage": "Round of 32",
-          "stageRank": 1,
+          "furthestStage": "Round of 16",
+          "stageRank": 2,
           "wins": 3,
           "draws": 1,
           "losses": 0,
           "matchPoints": 3.5,
-          "stagePoints": 4,
-          "points": 7.5
+          "stagePoints": 8,
+          "points": 11.5
         },
         {
           "name": "Turkiye",
@@ -81,7 +81,7 @@
           "points": 1.0
         }
       ],
-      "totalPoints": 99.0,
+      "totalPoints": 112.0,
       "teamsAdvancedCount": 5,
       "rank": 1
     },
@@ -95,7 +95,7 @@
           "stageRank": 1,
           "wins": 1,
           "draws": 1,
-          "losses": 1,
+          "losses": 2,
           "matchPoints": 1.5,
           "stagePoints": 28,
           "points": 29.5
@@ -181,6 +181,18 @@
           "points": 28.5
         },
         {
+          "name": "Argentina",
+          "pot": 1,
+          "furthestStage": "Round of 16",
+          "stageRank": 2,
+          "wins": 4,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 4.0,
+          "stagePoints": 8,
+          "points": 12.0
+        },
+        {
           "name": "United States",
           "pot": 1,
           "furthestStage": "Round of 16",
@@ -227,21 +239,9 @@
           "matchPoints": 1.0,
           "stagePoints": 8,
           "points": 9.0
-        },
-        {
-          "name": "Argentina",
-          "pot": 1,
-          "furthestStage": "Round of 32",
-          "stageRank": 1,
-          "wins": 4,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 4.0,
-          "stagePoints": 4,
-          "points": 8.0
         }
       ],
-      "totalPoints": 75.5,
+      "totalPoints": 79.5,
       "teamsAdvancedCount": 6,
       "rank": 3
     },
@@ -355,14 +355,14 @@
         {
           "name": "Portugal",
           "pot": 1,
-          "furthestStage": "Round of 32",
-          "stageRank": 1,
+          "furthestStage": "Round of 16",
+          "stageRank": 2,
           "wins": 2,
           "draws": 2,
           "losses": 0,
           "matchPoints": 3.0,
-          "stagePoints": 4,
-          "points": 7.0
+          "stagePoints": 8,
+          "points": 11.0
         },
         {
           "name": "South Korea",
@@ -401,7 +401,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 48.0,
+      "totalPoints": 52.0,
       "teamsAdvancedCount": 3,
       "rank": 5
     },
@@ -423,14 +423,14 @@
         {
           "name": "Switzerland",
           "pot": 2,
-          "furthestStage": "Round of 32",
-          "stageRank": 1,
+          "furthestStage": "Round of 16",
+          "stageRank": 2,
           "wins": 3,
           "draws": 1,
           "losses": 0,
           "matchPoints": 3.5,
-          "stagePoints": 8,
-          "points": 11.5
+          "stagePoints": 14,
+          "points": 17.5
         },
         {
           "name": "Netherlands",
@@ -481,7 +481,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 38.5,
+      "totalPoints": 44.5,
       "teamsAdvancedCount": 3,
       "rank": 6
     },
@@ -491,14 +491,14 @@
         {
           "name": "Colombia",
           "pot": 2,
-          "furthestStage": "Round of 32",
-          "stageRank": 1,
-          "wins": 2,
+          "furthestStage": "Round of 16",
+          "stageRank": 2,
+          "wins": 3,
           "draws": 1,
           "losses": 0,
-          "matchPoints": 2.5,
-          "stagePoints": 8,
-          "points": 10.5
+          "matchPoints": 3.5,
+          "stagePoints": 14,
+          "points": 17.5
         },
         {
           "name": "Croatia",
@@ -561,19 +561,12 @@
           "points": 0.5
         }
       ],
-      "totalPoints": 37.5,
+      "totalPoints": 44.5,
       "teamsAdvancedCount": 4,
-      "rank": 7
+      "rank": 6
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-07-04T01:30:00Z",
-      "stage": "LAST_32",
-      "status": "IN_PLAY",
-      "homeTeam": "Colombia",
-      "awayTeam": "Ghana"
-    },
     {
       "utcDate": "2026-07-04T17:00:00Z",
       "stage": "LAST_16",
@@ -606,8 +599,8 @@
       "utcDate": "2026-07-06T19:00:00Z",
       "stage": "LAST_16",
       "status": "TIMED",
-      "homeTeam": "TBD",
-      "awayTeam": "TBD"
+      "homeTeam": "Portugal",
+      "awayTeam": "Spain"
     },
     {
       "utcDate": "2026-07-07T00:00:00Z",
@@ -620,15 +613,15 @@
       "utcDate": "2026-07-07T16:00:00Z",
       "stage": "LAST_16",
       "status": "TIMED",
-      "homeTeam": "TBD",
-      "awayTeam": "TBD"
+      "homeTeam": "Argentina",
+      "awayTeam": "Egypt"
     },
     {
       "utcDate": "2026-07-07T20:00:00Z",
       "stage": "LAST_16",
       "status": "TIMED",
-      "homeTeam": "TBD",
-      "awayTeam": "TBD"
+      "homeTeam": "Switzerland",
+      "awayTeam": "Colombia"
     },
     {
       "utcDate": "2026-07-09T20:00:00Z",
