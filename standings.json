@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-05T19:16:57.142140Z",
+  "lastUpdated": "2026-07-05T20:59:12.998231Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 90,
@@ -570,7 +570,7 @@
     {
       "utcDate": "2026-07-05T20:00:00Z",
       "stage": "LAST_16",
-      "status": "TIMED",
+      "status": "PAUSED",
       "homeTeam": "Brazil",
       "awayTeam": "Norway"
     },
