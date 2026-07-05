@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-07-04T22:57:00.253246Z",
+  "lastUpdated": "2026-07-05T03:20:49.516274Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 89,
+  "finishedMatches": 90,
   "tournamentStarted": true,
   "players": [
     {
@@ -175,7 +175,7 @@
           "stageRank": 2,
           "wins": 2,
           "draws": 1,
-          "losses": 1,
+          "losses": 2,
           "matchPoints": 2.5,
           "stagePoints": 26,
           "points": 28.5
@@ -277,12 +277,12 @@
           "pot": 1,
           "furthestStage": "Round of 16",
           "stageRank": 2,
-          "wins": 4,
+          "wins": 5,
           "draws": 0,
           "losses": 0,
-          "matchPoints": 4.0,
+          "matchPoints": 5.0,
           "stagePoints": 8,
-          "points": 12.0
+          "points": 13.0
         },
         {
           "name": "Ecuador",
@@ -321,7 +321,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 70.5,
+      "totalPoints": 71.5,
       "teamsAdvancedCount": 4,
       "rank": 4
     },
@@ -567,13 +567,6 @@
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-07-04T21:00:00Z",
-      "stage": "LAST_16",
-      "status": "IN_PLAY",
-      "homeTeam": "Paraguay",
-      "awayTeam": "France"
-    },
     {
       "utcDate": "2026-07-05T20:00:00Z",
       "stage": "LAST_16",
