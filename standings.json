@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-06T03:28:49.378161Z",
+  "lastUpdated": "2026-07-06T08:19:32.066254Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 92,
@@ -47,14 +47,14 @@
         {
           "name": "England",
           "pot": 1,
-          "furthestStage": "Round of 16",
-          "stageRank": 2,
+          "furthestStage": "Quarterfinal",
+          "stageRank": 3,
           "wins": 4,
           "draws": 1,
           "losses": 0,
           "matchPoints": 4.5,
-          "stagePoints": 8,
-          "points": 12.5
+          "stagePoints": 15,
+          "points": 19.5
         },
         {
           "name": "Spain",
@@ -81,7 +81,7 @@
           "points": 1.0
         }
       ],
-      "totalPoints": 113.0,
+      "totalPoints": 120.0,
       "teamsAdvancedCount": 5,
       "rank": 1
     },
@@ -331,14 +331,14 @@
         {
           "name": "Norway",
           "pot": 3,
-          "furthestStage": "Round of 16",
-          "stageRank": 2,
+          "furthestStage": "Quarterfinal",
+          "stageRank": 3,
           "wins": 4,
           "draws": 0,
           "losses": 1,
           "matchPoints": 4.0,
-          "stagePoints": 26,
-          "points": 30.0
+          "stagePoints": 35,
+          "points": 39.0
         },
         {
           "name": "Belgium",
@@ -401,7 +401,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 53.0,
+      "totalPoints": 62.0,
       "teamsAdvancedCount": 3,
       "rank": 5
     },
@@ -613,8 +613,8 @@
       "utcDate": "2026-07-11T21:00:00Z",
       "stage": "QUARTER_FINALS",
       "status": "TIMED",
-      "homeTeam": "TBD",
-      "awayTeam": "TBD"
+      "homeTeam": "Norway",
+      "awayTeam": "England"
     },
     {
       "utcDate": "2026-07-12T01:00:00Z",
