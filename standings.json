@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-07-05T23:00:15.626461Z",
+  "lastUpdated": "2026-07-06T03:28:49.378161Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 91,
+  "finishedMatches": 92,
   "tournamentStarted": true,
   "players": [
     {
@@ -49,12 +49,12 @@
           "pot": 1,
           "furthestStage": "Round of 16",
           "stageRank": 2,
-          "wins": 3,
+          "wins": 4,
           "draws": 1,
           "losses": 0,
-          "matchPoints": 3.5,
+          "matchPoints": 4.5,
           "stagePoints": 8,
-          "points": 11.5
+          "points": 12.5
         },
         {
           "name": "Spain",
@@ -81,7 +81,7 @@
           "points": 1.0
         }
       ],
-      "totalPoints": 112.0,
+      "totalPoints": 113.0,
       "teamsAdvancedCount": 5,
       "rank": 1
     },
@@ -199,7 +199,7 @@
           "stageRank": 2,
           "wins": 4,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "matchPoints": 4.0,
           "stagePoints": 8,
           "points": 12.0
@@ -567,13 +567,6 @@
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-07-06T00:00:00Z",
-      "stage": "LAST_16",
-      "status": "TIMED",
-      "homeTeam": "Mexico",
-      "awayTeam": "England"
-    },
     {
       "utcDate": "2026-07-06T19:00:00Z",
       "stage": "LAST_16",
