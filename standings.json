@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-07-06T23:06:41.320698Z",
+  "lastUpdated": "2026-07-07T03:19:06.199552Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 93,
+  "finishedMatches": 94,
   "tournamentStarted": true,
   "players": [
     {
@@ -279,7 +279,7 @@
           "stageRank": 2,
           "wins": 3,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "matchPoints": 3.0,
           "stagePoints": 8,
           "points": 11.0
@@ -345,12 +345,12 @@
           "pot": 1,
           "furthestStage": "Round of 16",
           "stageRank": 2,
-          "wins": 2,
+          "wins": 3,
           "draws": 2,
           "losses": 0,
-          "matchPoints": 3.0,
+          "matchPoints": 4.0,
           "stagePoints": 8,
-          "points": 11.0
+          "points": 12.0
         },
         {
           "name": "Portugal",
@@ -401,7 +401,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 62.0,
+      "totalPoints": 63.0,
       "teamsAdvancedCount": 3,
       "rank": 5
     },
@@ -567,13 +567,6 @@
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-07-07T00:00:00Z",
-      "stage": "LAST_16",
-      "status": "TIMED",
-      "homeTeam": "United States",
-      "awayTeam": "Belgium"
-    },
     {
       "utcDate": "2026-07-07T16:00:00Z",
       "stage": "LAST_16",
