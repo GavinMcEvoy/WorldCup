@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-07T03:19:06.199552Z",
+  "lastUpdated": "2026-07-07T07:37:19.985991Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 94,
@@ -59,14 +59,14 @@
         {
           "name": "Spain",
           "pot": 1,
-          "furthestStage": "Round of 16",
-          "stageRank": 2,
+          "furthestStage": "Quarterfinal",
+          "stageRank": 3,
           "wins": 4,
           "draws": 1,
           "losses": 0,
           "matchPoints": 4.5,
-          "stagePoints": 8,
-          "points": 12.5
+          "stagePoints": 15,
+          "points": 19.5
         },
         {
           "name": "Turkiye",
@@ -81,7 +81,7 @@
           "points": 1.0
         }
       ],
-      "totalPoints": 121.0,
+      "totalPoints": 128.0,
       "teamsAdvancedCount": 5,
       "rank": 1
     },
@@ -343,14 +343,14 @@
         {
           "name": "Belgium",
           "pot": 1,
-          "furthestStage": "Round of 16",
-          "stageRank": 2,
+          "furthestStage": "Quarterfinal",
+          "stageRank": 3,
           "wins": 3,
           "draws": 2,
           "losses": 0,
           "matchPoints": 4.0,
-          "stagePoints": 8,
-          "points": 12.0
+          "stagePoints": 15,
+          "points": 19.0
         },
         {
           "name": "Portugal",
@@ -401,7 +401,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 63.0,
+      "totalPoints": 70.0,
       "teamsAdvancedCount": 3,
       "rank": 5
     },
@@ -592,8 +592,8 @@
       "utcDate": "2026-07-10T19:00:00Z",
       "stage": "QUARTER_FINALS",
       "status": "TIMED",
-      "homeTeam": "TBD",
-      "awayTeam": "TBD"
+      "homeTeam": "Spain",
+      "awayTeam": "Belgium"
     },
     {
       "utcDate": "2026-07-11T21:00:00Z",
