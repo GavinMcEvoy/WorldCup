@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-07-07T17:58:33.949945Z",
+  "lastUpdated": "2026-07-07T20:07:43.255921Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 94,
+  "finishedMatches": 95,
   "tournamentStarted": true,
   "players": [
     {
@@ -39,7 +39,7 @@
           "stageRank": 2,
           "wins": 2,
           "draws": 2,
-          "losses": 0,
+          "losses": 1,
           "matchPoints": 3.0,
           "stagePoints": 26,
           "points": 29.0
@@ -265,12 +265,12 @@
           "pot": 1,
           "furthestStage": "Round of 16",
           "stageRank": 2,
-          "wins": 4,
+          "wins": 5,
           "draws": 0,
           "losses": 0,
-          "matchPoints": 4.0,
+          "matchPoints": 5.0,
           "stagePoints": 8,
-          "points": 12.0
+          "points": 13.0
         },
         {
           "name": "United States",
@@ -321,7 +321,7 @@
           "points": 9.0
         }
       ],
-      "totalPoints": 79.5,
+      "totalPoints": 80.5,
       "teamsAdvancedCount": 6,
       "rank": 4
     },
@@ -568,16 +568,9 @@
   ],
   "upcomingMatches": [
     {
-      "utcDate": "2026-07-07T16:00:00Z",
-      "stage": "LAST_16",
-      "status": "IN_PLAY",
-      "homeTeam": "Argentina",
-      "awayTeam": "Egypt"
-    },
-    {
       "utcDate": "2026-07-07T20:00:00Z",
       "stage": "LAST_16",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Switzerland",
       "awayTeam": "Colombia"
     },
