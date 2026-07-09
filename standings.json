@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-09T19:45:27.561853Z",
+  "lastUpdated": "2026-07-09T21:22:28.853619Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 96,
@@ -570,7 +570,7 @@
     {
       "utcDate": "2026-07-09T20:00:00Z",
       "stage": "QUARTER_FINALS",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "France",
       "awayTeam": "Morocco"
     },
