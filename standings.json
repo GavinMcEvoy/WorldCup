@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-10T17:46:58.209733Z",
+  "lastUpdated": "2026-07-10T19:25:59.450280Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 97,
@@ -570,7 +570,7 @@
     {
       "utcDate": "2026-07-10T19:00:00Z",
       "stage": "QUARTER_FINALS",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Spain",
       "awayTeam": "Belgium"
     },
