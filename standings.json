@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-10T02:58:14.933121Z",
+  "lastUpdated": "2026-07-10T07:34:03.334094Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 97,
@@ -89,6 +89,18 @@
       "name": "Eriku",
       "teams": [
         {
+          "name": "France",
+          "pot": 1,
+          "furthestStage": "Semifinal",
+          "stageRank": 4,
+          "wins": 6,
+          "draws": 0,
+          "losses": 0,
+          "matchPoints": 6.0,
+          "stagePoints": 25,
+          "points": 31.0
+        },
+        {
           "name": "Bosnia and Herzegovina",
           "pot": 4,
           "furthestStage": "Round of 32",
@@ -111,18 +123,6 @@
           "matchPoints": 4.5,
           "stagePoints": 22,
           "points": 26.5
-        },
-        {
-          "name": "France",
-          "pot": 1,
-          "furthestStage": "Quarterfinal",
-          "stageRank": 3,
-          "wins": 6,
-          "draws": 0,
-          "losses": 0,
-          "matchPoints": 6.0,
-          "stagePoints": 15,
-          "points": 21.0
         },
         {
           "name": "Ecuador",
@@ -161,7 +161,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 87.5,
+      "totalPoints": 97.5,
       "teamsAdvancedCount": 4,
       "rank": 2
     },
@@ -243,7 +243,7 @@
       ],
       "totalPoints": 87.5,
       "teamsAdvancedCount": 6,
-      "rank": 2
+      "rank": 3
     },
     {
       "name": "Dev",
@@ -592,7 +592,7 @@
       "utcDate": "2026-07-14T19:00:00Z",
       "stage": "SEMI_FINALS",
       "status": "TIMED",
-      "homeTeam": "TBD",
+      "homeTeam": "France",
       "awayTeam": "TBD"
     },
     {
