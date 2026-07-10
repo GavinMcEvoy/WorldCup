@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-07-10T21:05:07.406238Z",
+  "lastUpdated": "2026-07-10T22:58:29.884904Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 97,
+  "finishedMatches": 98,
   "tournamentStarted": true,
   "players": [
     {
@@ -45,19 +45,19 @@
           "points": 29.0
         },
         {
-          "name": "England",
+          "name": "Spain",
           "pot": 1,
           "furthestStage": "Quarterfinal",
           "stageRank": 3,
-          "wins": 4,
+          "wins": 5,
           "draws": 1,
           "losses": 0,
-          "matchPoints": 4.5,
+          "matchPoints": 5.5,
           "stagePoints": 15,
-          "points": 19.5
+          "points": 20.5
         },
         {
-          "name": "Spain",
+          "name": "England",
           "pot": 1,
           "furthestStage": "Quarterfinal",
           "stageRank": 3,
@@ -81,7 +81,7 @@
           "points": 1.0
         }
       ],
-      "totalPoints": 128.0,
+      "totalPoints": 129.0,
       "teamsAdvancedCount": 5,
       "rank": 1
     },
@@ -347,7 +347,7 @@
           "stageRank": 3,
           "wins": 3,
           "draws": 2,
-          "losses": 0,
+          "losses": 1,
           "matchPoints": 4.0,
           "stagePoints": 15,
           "points": 19.0
@@ -567,13 +567,6 @@
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-07-10T19:00:00Z",
-      "stage": "QUARTER_FINALS",
-      "status": "IN_PLAY",
-      "homeTeam": "Spain",
-      "awayTeam": "Belgium"
-    },
     {
       "utcDate": "2026-07-11T21:00:00Z",
       "stage": "QUARTER_FINALS",
