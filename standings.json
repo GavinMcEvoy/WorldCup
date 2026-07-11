@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-07-11T20:45:58.028065Z",
+  "lastUpdated": "2026-07-11T22:46:41.185625Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 98,
+  "finishedMatches": 97,
   "tournamentStarted": true,
   "players": [
     {
@@ -61,12 +61,12 @@
           "pot": 1,
           "furthestStage": "Quarterfinal",
           "stageRank": 3,
-          "wins": 4,
+          "wins": 3,
           "draws": 1,
           "losses": 0,
-          "matchPoints": 4.5,
+          "matchPoints": 3.5,
           "stagePoints": 15,
-          "points": 19.5
+          "points": 18.5
         },
         {
           "name": "Turkiye",
@@ -81,7 +81,7 @@
           "points": 1.0
         }
       ],
-      "totalPoints": 139.0,
+      "totalPoints": 138.0,
       "teamsAdvancedCount": 5,
       "rank": 1
     },
@@ -279,7 +279,7 @@
           "stageRank": 2,
           "wins": 4,
           "draws": 0,
-          "losses": 1,
+          "losses": 0,
           "matchPoints": 4.0,
           "stagePoints": 8,
           "points": 12.0
@@ -568,9 +568,16 @@
   ],
   "upcomingMatches": [
     {
+      "utcDate": "2026-07-06T01:00:00Z",
+      "stage": "LAST_16",
+      "status": "2026-07-06 01:00:00Z",
+      "homeTeam": "Mexico",
+      "awayTeam": "England"
+    },
+    {
       "utcDate": "2026-07-11T21:00:00Z",
       "stage": "QUARTER_FINALS",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Norway",
       "awayTeam": "England"
     },
