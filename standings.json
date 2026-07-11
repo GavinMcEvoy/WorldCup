@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-11T06:11:56.646712Z",
+  "lastUpdated": "2026-07-11T09:28:17.739387Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 98,
@@ -8,6 +8,18 @@
     {
       "name": "Gav",
       "teams": [
+        {
+          "name": "Spain",
+          "pot": 1,
+          "furthestStage": "Semifinal",
+          "stageRank": 4,
+          "wins": 5,
+          "draws": 1,
+          "losses": 0,
+          "matchPoints": 5.5,
+          "stagePoints": 25,
+          "points": 30.5
+        },
         {
           "name": "DR Congo",
           "pot": 4,
@@ -45,18 +57,6 @@
           "points": 29.0
         },
         {
-          "name": "Spain",
-          "pot": 1,
-          "furthestStage": "Quarterfinal",
-          "stageRank": 3,
-          "wins": 5,
-          "draws": 1,
-          "losses": 0,
-          "matchPoints": 5.5,
-          "stagePoints": 15,
-          "points": 20.5
-        },
-        {
           "name": "England",
           "pot": 1,
           "furthestStage": "Quarterfinal",
@@ -81,7 +81,7 @@
           "points": 1.0
         }
       ],
-      "totalPoints": 129.0,
+      "totalPoints": 139.0,
       "teamsAdvancedCount": 5,
       "rank": 1
     },
@@ -586,7 +586,7 @@
       "stage": "SEMI_FINALS",
       "status": "TIMED",
       "homeTeam": "France",
-      "awayTeam": "TBD"
+      "awayTeam": "Spain"
     },
     {
       "utcDate": "2026-07-15T19:00:00Z",
