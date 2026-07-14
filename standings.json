@@ -1,27 +1,27 @@
 {
-  "lastUpdated": "2026-07-14T20:59:15.176255Z",
+  "lastUpdated": "2026-07-14T22:56:14.241124Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 100,
+  "finishedMatches": 101,
   "tournamentStarted": true,
   "players": [
     {
       "name": "Gav",
       "teams": [
         {
-          "name": "England",
+          "name": "Spain",
           "pot": 1,
           "furthestStage": "Semifinal",
           "stageRank": 4,
-          "wins": 5,
+          "wins": 6,
           "draws": 1,
           "losses": 0,
-          "matchPoints": 5.5,
+          "matchPoints": 6.5,
           "stagePoints": 25,
-          "points": 30.5
+          "points": 31.5
         },
         {
-          "name": "Spain",
+          "name": "England",
           "pot": 1,
           "furthestStage": "Semifinal",
           "stageRank": 4,
@@ -81,7 +81,7 @@
           "points": 1.0
         }
       ],
-      "totalPoints": 150.0,
+      "totalPoints": 151.0,
       "teamsAdvancedCount": 5,
       "rank": 1
     },
@@ -175,7 +175,7 @@
           "stageRank": 4,
           "wins": 6,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "matchPoints": 6.0,
           "stagePoints": 25,
           "points": 31.0
@@ -567,13 +567,6 @@
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-07-14T19:00:00Z",
-      "stage": "SEMI_FINALS",
-      "status": "IN_PLAY",
-      "homeTeam": "France",
-      "awayTeam": "Spain"
-    },
     {
       "utcDate": "2026-07-15T19:00:00Z",
       "stage": "SEMI_FINALS",
