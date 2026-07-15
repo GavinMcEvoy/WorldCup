@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-07-15T20:59:11.870310Z",
+  "lastUpdated": "2026-07-15T22:57:23.620571Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 101,
+  "finishedMatches": 102,
   "tournamentStarted": true,
   "players": [
     {
@@ -27,7 +27,7 @@
           "stageRank": 4,
           "wins": 5,
           "draws": 1,
-          "losses": 0,
+          "losses": 1,
           "matchPoints": 5.5,
           "stagePoints": 25,
           "points": 30.5
@@ -93,12 +93,12 @@
           "pot": 1,
           "furthestStage": "Semifinal",
           "stageRank": 4,
-          "wins": 6,
+          "wins": 7,
           "draws": 0,
           "losses": 0,
-          "matchPoints": 6.0,
+          "matchPoints": 7.0,
           "stagePoints": 25,
-          "points": 31.0
+          "points": 32.0
         },
         {
           "name": "Paraguay",
@@ -161,7 +161,7 @@
           "points": 9.0
         }
       ],
-      "totalPoints": 98.5,
+      "totalPoints": 99.5,
       "teamsAdvancedCount": 6,
       "rank": 2
     },
@@ -567,13 +567,6 @@
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-07-15T19:00:00Z",
-      "stage": "SEMI_FINALS",
-      "status": "IN_PLAY",
-      "homeTeam": "England",
-      "awayTeam": "Argentina"
-    },
     {
       "utcDate": "2026-07-18T21:00:00Z",
       "stage": "THIRD_PLACE",
