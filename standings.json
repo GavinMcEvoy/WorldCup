@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-15T02:24:07.750945Z",
+  "lastUpdated": "2026-07-15T06:12:57.110192Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 101,
@@ -11,14 +11,14 @@
         {
           "name": "Spain",
           "pot": 1,
-          "furthestStage": "Semifinal",
-          "stageRank": 4,
+          "furthestStage": "Final",
+          "stageRank": 5,
           "wins": 6,
           "draws": 1,
           "losses": 0,
           "matchPoints": 6.5,
-          "stagePoints": 25,
-          "points": 31.5
+          "stagePoints": 41,
+          "points": 47.5
         },
         {
           "name": "England",
@@ -81,7 +81,7 @@
           "points": 1.0
         }
       ],
-      "totalPoints": 151.0,
+      "totalPoints": 167.0,
       "teamsAdvancedCount": 5,
       "rank": 1
     },
@@ -578,14 +578,14 @@
       "utcDate": "2026-07-18T21:00:00Z",
       "stage": "THIRD_PLACE",
       "status": "TIMED",
-      "homeTeam": "TBD",
+      "homeTeam": "France",
       "awayTeam": "TBD"
     },
     {
       "utcDate": "2026-07-19T19:00:00Z",
       "stage": "FINAL",
       "status": "TIMED",
-      "homeTeam": "TBD",
+      "homeTeam": "Spain",
       "awayTeam": "TBD"
     }
   ],
