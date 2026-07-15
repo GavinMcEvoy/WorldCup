@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-15T17:16:20.907378Z",
+  "lastUpdated": "2026-07-15T19:09:15.325633Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
   "finishedMatches": 101,
@@ -570,7 +570,7 @@
     {
       "utcDate": "2026-07-15T19:00:00Z",
       "stage": "SEMI_FINALS",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "England",
       "awayTeam": "Argentina"
     },
