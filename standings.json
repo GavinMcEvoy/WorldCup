@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-07-18T22:48:36.062439Z",
+  "lastUpdated": "2026-07-19T02:38:25.410317Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 102,
+  "finishedMatches": 103,
   "tournamentStarted": true,
   "players": [
     {
@@ -25,12 +25,12 @@
           "pot": 1,
           "furthestStage": "Semifinal",
           "stageRank": 4,
-          "wins": 5,
+          "wins": 6,
           "draws": 1,
           "losses": 1,
-          "matchPoints": 5.5,
+          "matchPoints": 6.5,
           "stagePoints": 25,
-          "points": 30.5
+          "points": 31.5
         },
         {
           "name": "DR Congo",
@@ -81,7 +81,7 @@
           "points": 1.0
         }
       ],
-      "totalPoints": 167.0,
+      "totalPoints": 168.0,
       "teamsAdvancedCount": 5,
       "rank": 1
     },
@@ -175,7 +175,7 @@
           "stageRank": 4,
           "wins": 6,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "matchPoints": 6.0,
           "stagePoints": 25,
           "points": 31.0
@@ -567,13 +567,6 @@
     }
   ],
   "upcomingMatches": [
-    {
-      "utcDate": "2026-07-18T21:00:00Z",
-      "stage": "THIRD_PLACE",
-      "status": "IN_PLAY",
-      "homeTeam": "France",
-      "awayTeam": "England"
-    },
     {
       "utcDate": "2026-07-19T19:00:00Z",
       "stage": "FINAL",
