@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-07-19T20:46:32.405623Z",
+  "lastUpdated": "2026-07-19T22:51:04.573891Z",
   "competition": "FIFA World Cup 2026",
   "totalMatches": 104,
-  "finishedMatches": 103,
+  "finishedMatches": 104,
   "tournamentStarted": true,
   "players": [
     {
@@ -11,14 +11,14 @@
         {
           "name": "Spain",
           "pot": 1,
-          "furthestStage": "Final",
-          "stageRank": 5,
-          "wins": 6,
+          "furthestStage": "Champion",
+          "stageRank": 6,
+          "wins": 7,
           "draws": 1,
           "losses": 0,
-          "matchPoints": 6.5,
-          "stagePoints": 41,
-          "points": 47.5
+          "matchPoints": 7.5,
+          "stagePoints": 62,
+          "points": 69.5
         },
         {
           "name": "England",
@@ -81,7 +81,7 @@
           "points": 1.0
         }
       ],
-      "totalPoints": 168.0,
+      "totalPoints": 190.0,
       "teamsAdvancedCount": 5,
       "rank": 1
     },
@@ -95,7 +95,7 @@
           "stageRank": 5,
           "wins": 7,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "matchPoints": 7.0,
           "stagePoints": 41,
           "points": 48.0
@@ -566,15 +566,7 @@
       "rank": 7
     }
   ],
-  "upcomingMatches": [
-    {
-      "utcDate": "2026-07-19T19:00:00Z",
-      "stage": "FINAL",
-      "status": "IN_PLAY",
-      "homeTeam": "Spain",
-      "awayTeam": "Argentina"
-    }
-  ],
+  "upcomingMatches": [],
   "scoringLegend": {
     "matchPoints": {
       "Win": 1,
